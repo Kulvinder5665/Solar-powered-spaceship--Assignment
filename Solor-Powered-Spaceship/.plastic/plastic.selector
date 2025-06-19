@@ -1,0 +1,4 @@
+repository "Solor-Powered-Spaceship/Solor-Powered-Spaceship@13469617305570@cloud"
+  path "/"
+    br "/main"
+    co "/main"
