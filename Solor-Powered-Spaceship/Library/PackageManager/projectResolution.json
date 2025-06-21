@@ -1,14 +1,34 @@
 {
   "context": {
     "projectPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Packages",
-    "unityVersion": "6000.1.6f1"
+    "unityVersion": "6000.0.43f1"
   },
   "inputs": [
     "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Packages/manifest.json",
     "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Packages/packages-lock.json",
-    "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/BuiltInPackagesCombined.sha1"
+    "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
+    "com.boxqkrtm.ide.cursor@https://github.com/boxqkrtm/com.unity.ide.cursor.git": {
+      "name": "com.boxqkrtm.ide.cursor",
+      "displayName": "Cursor Editor",
+      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.boxqkrtm.ide.cursor@38fecf55e4fd",
+      "fingerprint": "38fecf55e4fd94ccfe58a92ed8ad1a529ba1694e",
+      "editorCompatibility": "2019.4.25f1",
+      "version": "2.0.25",
+      "source": "git",
+      "testable": false
+    },
+    "com.unity.cinemachine@3.1.4": {
+      "name": "com.unity.cinemachine",
+      "displayName": "Cinemachine",
+      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.cinemachine@b66fdb7cd1f2",
+      "fingerprint": "b66fdb7cd1f2f796860f420c11c2033b2262c986",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "3.1.4",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.collab-proxy@2.8.2": {
       "name": "com.unity.collab-proxy",
       "displayName": "Version Control",
@@ -19,13 +39,24 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.feature.development@1.0.2": {
-      "name": "com.unity.feature.development",
-      "displayName": "Engineering",
-      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.feature.development@767aadbc6eb7",
-      "fingerprint": "767aadbc6eb72681a4ca807c8fa248e0230a0cef",
-      "version": "1.0.2",
-      "source": "builtin",
+    "com.unity.ide.visualstudio@2.0.23": {
+      "name": "com.unity.ide.visualstudio",
+      "displayName": "Visual Studio Editor",
+      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ide.visualstudio@198cdf337d13",
+      "fingerprint": "198cdf337d13c83ca953581515630d66b779e92b",
+      "editorCompatibility": "2019.4.25f1",
+      "version": "2.0.23",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.inputsystem@1.13.1": {
+      "name": "com.unity.inputsystem",
+      "displayName": "Input System",
+      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.inputsystem@e2c83221d2dc",
+      "fingerprint": "e2c83221d2dc3fc990b017cbd3f9d0742649c8a8",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.13.1",
+      "source": "registry",
       "testable": false
     },
     "com.unity.multiplayer.center@1.0.0": {
@@ -51,8 +82,8 @@
     "com.unity.ugui@2.0.0": {
       "name": "com.unity.ugui",
       "displayName": "Unity UI",
-      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ugui@4f1c21fcc9bc",
-      "fingerprint": "4f1c21fcc9bcee6987a89cc276da72ac77ce3db1",
+      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ugui@c82f62fefab3",
+      "fingerprint": "c82f62fefab33ce05e397f56634776192888900b",
       "editorCompatibility": "2019.2.0a1",
       "version": "2.0.0",
       "source": "builtin",
@@ -71,7 +102,7 @@
     "com.unity.modules.accessibility@1.0.0": {
       "name": "com.unity.modules.accessibility",
       "displayName": "Accessibility",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.accessibility",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.accessibility",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -79,7 +110,7 @@
     "com.unity.modules.ai@1.0.0": {
       "name": "com.unity.modules.ai",
       "displayName": "AI",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.ai",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.ai",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -87,7 +118,7 @@
     "com.unity.modules.androidjni@1.0.0": {
       "name": "com.unity.modules.androidjni",
       "displayName": "Android JNI",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.androidjni",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.androidjni",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -95,7 +126,7 @@
     "com.unity.modules.animation@1.0.0": {
       "name": "com.unity.modules.animation",
       "displayName": "Animation",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.animation",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.animation",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -103,7 +134,7 @@
     "com.unity.modules.assetbundle@1.0.0": {
       "name": "com.unity.modules.assetbundle",
       "displayName": "Asset Bundle",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.assetbundle",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.assetbundle",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -111,7 +142,7 @@
     "com.unity.modules.audio@1.0.0": {
       "name": "com.unity.modules.audio",
       "displayName": "Audio",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.audio",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.audio",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -119,7 +150,7 @@
     "com.unity.modules.cloth@1.0.0": {
       "name": "com.unity.modules.cloth",
       "displayName": "Cloth",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.cloth",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.cloth",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -127,7 +158,7 @@
     "com.unity.modules.director@1.0.0": {
       "name": "com.unity.modules.director",
       "displayName": "Director",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.director",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.director",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -135,7 +166,7 @@
     "com.unity.modules.imageconversion@1.0.0": {
       "name": "com.unity.modules.imageconversion",
       "displayName": "Image Conversion",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.imageconversion",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.imageconversion",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -143,7 +174,7 @@
     "com.unity.modules.imgui@1.0.0": {
       "name": "com.unity.modules.imgui",
       "displayName": "IMGUI",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.imgui",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.imgui",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -151,7 +182,7 @@
     "com.unity.modules.jsonserialize@1.0.0": {
       "name": "com.unity.modules.jsonserialize",
       "displayName": "JSONSerialize",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.jsonserialize",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.jsonserialize",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -159,7 +190,7 @@
     "com.unity.modules.particlesystem@1.0.0": {
       "name": "com.unity.modules.particlesystem",
       "displayName": "Particle System",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.particlesystem",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.particlesystem",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -167,7 +198,7 @@
     "com.unity.modules.physics@1.0.0": {
       "name": "com.unity.modules.physics",
       "displayName": "Physics",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -175,7 +206,7 @@
     "com.unity.modules.physics2d@1.0.0": {
       "name": "com.unity.modules.physics2d",
       "displayName": "Physics 2D",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics2d",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics2d",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -183,7 +214,7 @@
     "com.unity.modules.screencapture@1.0.0": {
       "name": "com.unity.modules.screencapture",
       "displayName": "Screen Capture",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.screencapture",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.screencapture",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -191,7 +222,7 @@
     "com.unity.modules.terrain@1.0.0": {
       "name": "com.unity.modules.terrain",
       "displayName": "Terrain",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrain",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrain",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -199,7 +230,7 @@
     "com.unity.modules.terrainphysics@1.0.0": {
       "name": "com.unity.modules.terrainphysics",
       "displayName": "Terrain Physics",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrainphysics",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrainphysics",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -207,7 +238,7 @@
     "com.unity.modules.tilemap@1.0.0": {
       "name": "com.unity.modules.tilemap",
       "displayName": "Tilemap",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.tilemap",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.tilemap",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -215,7 +246,7 @@
     "com.unity.modules.ui@1.0.0": {
       "name": "com.unity.modules.ui",
       "displayName": "UI",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.ui",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.ui",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -223,7 +254,7 @@
     "com.unity.modules.uielements@1.0.0": {
       "name": "com.unity.modules.uielements",
       "displayName": "UIElements",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.uielements",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.uielements",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -231,7 +262,7 @@
     "com.unity.modules.umbra@1.0.0": {
       "name": "com.unity.modules.umbra",
       "displayName": "Umbra",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.umbra",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.umbra",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -239,7 +270,7 @@
     "com.unity.modules.unityanalytics@1.0.0": {
       "name": "com.unity.modules.unityanalytics",
       "displayName": "Unity Analytics",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unityanalytics",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unityanalytics",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -247,7 +278,7 @@
     "com.unity.modules.unitywebrequest@1.0.0": {
       "name": "com.unity.modules.unitywebrequest",
       "displayName": "Unity Web Request",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequest",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequest",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -255,7 +286,7 @@
     "com.unity.modules.unitywebrequestassetbundle@1.0.0": {
       "name": "com.unity.modules.unitywebrequestassetbundle",
       "displayName": "Unity Web Request Asset Bundle",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestassetbundle",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestassetbundle",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -263,7 +294,7 @@
     "com.unity.modules.unitywebrequestaudio@1.0.0": {
       "name": "com.unity.modules.unitywebrequestaudio",
       "displayName": "Unity Web Request Audio",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestaudio",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestaudio",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -271,7 +302,7 @@
     "com.unity.modules.unitywebrequesttexture@1.0.0": {
       "name": "com.unity.modules.unitywebrequesttexture",
       "displayName": "Unity Web Request Texture",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequesttexture",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequesttexture",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -279,7 +310,7 @@
     "com.unity.modules.unitywebrequestwww@1.0.0": {
       "name": "com.unity.modules.unitywebrequestwww",
       "displayName": "Unity Web Request WWW",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestwww",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestwww",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -287,7 +318,7 @@
     "com.unity.modules.vehicles@1.0.0": {
       "name": "com.unity.modules.vehicles",
       "displayName": "Vehicles",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.vehicles",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.vehicles",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -295,7 +326,7 @@
     "com.unity.modules.video@1.0.0": {
       "name": "com.unity.modules.video",
       "displayName": "Video",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.video",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.video",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -303,7 +334,7 @@
     "com.unity.modules.vr@1.0.0": {
       "name": "com.unity.modules.vr",
       "displayName": "VR",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.vr",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.vr",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -311,7 +342,7 @@
     "com.unity.modules.wind@1.0.0": {
       "name": "com.unity.modules.wind",
       "displayName": "Wind",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.wind",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.wind",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -319,7 +350,7 @@
     "com.unity.modules.xr@1.0.0": {
       "name": "com.unity.modules.xr",
       "displayName": "XR",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.xr",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.xr",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -327,7 +358,7 @@
     "com.unity.modules.subsystems@1.0.0": {
       "name": "com.unity.modules.subsystems",
       "displayName": "Subsystems",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.subsystems",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.subsystems",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -335,89 +366,59 @@
     "com.unity.modules.hierarchycore@1.0.0": {
       "name": "com.unity.modules.hierarchycore",
       "displayName": "Hierarchy Core",
-      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.hierarchycore",
+      "resolvedPath": "/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.hierarchycore",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
     },
-    "com.unity.ide.visualstudio@2.0.23": {
-      "name": "com.unity.ide.visualstudio",
-      "displayName": "Visual Studio Editor",
-      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ide.visualstudio@198cdf337d13",
-      "fingerprint": "198cdf337d13c83ca953581515630d66b779e92b",
-      "editorCompatibility": "2019.4.25f1",
-      "version": "2.0.23",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.ide.rider@3.0.36": {
-      "name": "com.unity.ide.rider",
-      "displayName": "JetBrains Rider Editor",
-      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db",
-      "fingerprint": "4d374c7eb6db6907c7e6925e3086c3c73f926e13",
-      "editorCompatibility": "2019.4.6f1",
-      "version": "3.0.36",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.editorcoroutines@1.0.0": {
-      "name": "com.unity.editorcoroutines",
-      "displayName": "Editor Coroutines",
-      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.editorcoroutines@7d48783e7b8c",
-      "fingerprint": "7d48783e7b8cfcee5f8ef9ba787ed0d9dad4ebca",
-      "editorCompatibility": "2018.1.0a1",
-      "version": "1.0.0",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.performance.profile-analyzer@1.2.3": {
-      "name": "com.unity.performance.profile-analyzer",
-      "displayName": "Profile Analyzer",
-      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.performance.profile-analyzer@a68e7bc84997",
-      "fingerprint": "a68e7bc849973d943853204178d08a2bc7656ffe",
-      "editorCompatibility": "2020.3.0a1",
-      "version": "1.2.3",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.test-framework@1.5.1": {
+    "com.unity.test-framework@1.4.6": {
       "name": "com.unity.test-framework",
       "displayName": "Test Framework",
-      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.test-framework@e9eb633386e7",
-      "fingerprint": "e9eb633386e74717a4978296e116538a4051e958",
-      "editorCompatibility": "2022.3.0a1",
-      "version": "1.5.1",
-      "source": "builtin",
-      "testable": false
-    },
-    "com.unity.testtools.codecoverage@1.2.6": {
-      "name": "com.unity.testtools.codecoverage",
-      "displayName": "Code Coverage",
-      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.testtools.codecoverage@205a02cbcb39",
-      "fingerprint": "205a02cbcb39584f20b51c49b853047aceb3a3a7",
-      "editorCompatibility": "2019.3.0a1",
-      "version": "1.2.6",
+      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.test-framework@5ac417e07314",
+      "fingerprint": "5ac417e07314c8f6afba8109738c32b82d391e68",
+      "editorCompatibility": "2019.4.1f1",
+      "version": "1.4.6",
       "source": "registry",
       "testable": false
     },
-    "com.unity.settings-manager@2.1.0": {
-      "name": "com.unity.settings-manager",
-      "displayName": "Settings Manager",
-      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.settings-manager@41738c275190",
-      "fingerprint": "41738c27519039c335849eb78949382f4d7a3544",
+    "com.unity.splines@2.7.2": {
+      "name": "com.unity.splines",
+      "displayName": "Splines",
+      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.splines@d3e1e500c9a0",
+      "fingerprint": "d3e1e500c9a0fa3a1e812117108982dd612c2e27",
       "editorCompatibility": "2022.3.0a1",
-      "version": "2.1.0",
+      "version": "2.7.2",
       "source": "registry",
       "testable": false
     },
     "com.unity.ext.nunit@2.0.5": {
       "name": "com.unity.ext.nunit",
       "displayName": "Custom NUnit",
-      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ext.nunit@031a54704bff",
-      "fingerprint": "031a54704bffe39e6a0324909f8eaa4565bdebf2",
+      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ext.nunit@60ef35ffd3cd",
+      "fingerprint": "60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.0.5",
-      "source": "builtin",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.mathematics@1.3.2": {
+      "name": "com.unity.mathematics",
+      "displayName": "Mathematics",
+      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.mathematics@8017b507cc74",
+      "fingerprint": "8017b507cc74bf0a1dd14b18aa860569f807314d",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.3.2",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.settings-manager@2.0.1": {
+      "name": "com.unity.settings-manager",
+      "displayName": "Settings Manager",
+      "resolvedPath": "/Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.settings-manager@56a930affa1e",
+      "fingerprint": "56a930affa1e4462d3595b5c19a1c2a4bf2015d2",
+      "editorCompatibility": "2018.4.0a1",
+      "version": "2.0.1",
+      "source": "registry",
       "testable": false
     }
   }

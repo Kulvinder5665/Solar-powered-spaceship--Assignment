@@ -5,23 +5,322 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638859156510000000
-    m_Hash: 246430858
+      ticks: 638860391850000000
+    m_Hash: 1626332747
   m_LockFileStatus:
     m_FilePath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638859156540000000
-    m_Hash: 1450332224
+      ticks: 638860391850000000
+    m_Hash: 1152067764
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Packages
-m_EditorVersion: 6000.1.6f1 (d64b1a599cad)
+m_EditorVersion: 6000.0.43f1 (97272b72f107)
 m_ResolvedPackages:
+- packageId: com.boxqkrtm.ide.cursor@https://github.com/boxqkrtm/com.unity.ide.cursor.git
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.25
+  source: 5
+  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.boxqkrtm.ide.cursor@38fecf55e4fd
+  assetPath: Packages/com.boxqkrtm.ide.cursor
+  name: com.boxqkrtm.ide.cursor
+  displayName: Cursor Editor
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Cursor editor integration for supporting Cursor as code editor for
+    unity. Adds support for generating csproj files for intellisense purposes, auto
+    discovery of installations, etc.
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.test-framework
+    version: 1.1.9
+  resolvedDependencies:
+  - name: com.unity.test-framework
+    version: 1.4.6
+  - name: com.unity.ext.nunit
+    version: 2.0.5
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 38fecf55e4fd94ccfe58a92ed8ad1a529ba1694e
+    revision: HEAD
+  upmReserved: '{"changelog":"Integration:\n\n- Add support for Cursor"}'
+  assetStore:
+    productId: 
+  fingerprint: 38fecf55e4fd94ccfe58a92ed8ad1a529ba1694e
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 
+    minimumUnityVersion: 2019.4.25f1
+- packageId: com.unity.cinemachine@3.1.4
+  testable: 0
+  isDirectDependency: 1
+  version: 3.1.4
+  source: 1
+  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.cinemachine@b66fdb7cd1f2
+  assetPath: Packages/com.unity.cinemachine
+  name: com.unity.cinemachine
+  displayName: Cinemachine
+  author:
+    name: 
+    email: 
+    url: 
+  category: cinematography
+  type: 
+  description: "Smart camera tools for passionate creators. \n\nCinemachine 3 is
+    a newer and better version of Cinemachine, but upgrading an existing project
+    from 2.X will likely require some effort.  If you're considering upgrading an
+    older project, please see our upgrade guide in the user manual."
+  errors: []
+  versions:
+    all:
+    - 2.1.11-beta.1
+    - 2.1.12
+    - 2.1.13
+    - 2.2.0
+    - 2.2.7
+    - 2.2.8
+    - 2.2.9
+    - 2.2.10-preview.3
+    - 2.2.10-preview.4
+    - 2.3.1
+    - 2.3.3
+    - 2.3.4
+    - 2.3.5-preview.3
+    - 2.4.0-preview.3
+    - 2.4.0-preview.4
+    - 2.4.0-preview.6
+    - 2.4.0-preview.7
+    - 2.4.0-preview.8
+    - 2.4.0-preview.9
+    - 2.4.0-preview.10
+    - 2.4.0
+    - 2.5.0
+    - 2.6.0-preview.2
+    - 2.6.0-preview.3
+    - 2.6.0-preview.5
+    - 2.6.0-preview.8
+    - 2.6.0
+    - 2.6.1-preview.6
+    - 2.6.1
+    - 2.6.2-preview.1
+    - 2.6.2
+    - 2.6.3-preview.2
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
+    - 2.6.9
+    - 2.6.10
+    - 2.6.11
+    - 2.6.14
+    - 2.6.15
+    - 2.6.17
+    - 2.7.1
+    - 2.7.2
+    - 2.7.3
+    - 2.7.4
+    - 2.7.5
+    - 2.7.8
+    - 2.7.9
+    - 2.8.0-exp.1
+    - 2.8.0-exp.2
+    - 2.8.0-pre.1
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    - 2.8.6
+    - 2.8.9
+    - 2.9.0-pre.1
+    - 2.9.0-pre.6
+    - 2.9.1
+    - 2.9.2
+    - 2.9.4
+    - 2.9.5
+    - 2.9.7
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.10.3
+    - 2.10.4
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    - 3.1.4
+    compatible:
+    - 2.10.3
+    - 2.10.4
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    - 3.1.4
+    recommended: 3.1.4
+    deprecated: []
+  dependencies:
+  - name: com.unity.splines
+    version: 2.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.splines
+    version: 2.7.2
+  - name: com.unity.mathematics
+    version: 1.3.2
+  - name: com.unity.settings-manager
+    version: 2.0.1
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  keywords:
+  - camera
+  - follow
+  - rig
+  - fps
+  - cinematography
+  - aim
+  - orbit
+  - cutscene
+  - cinematic
+  - collision
+  - freelook
+  - cinemachine
+  - compose
+  - composition
+  - dolly
+  - track
+  - clearshot
+  - noise
+  - framing
+  - handheld
+  - lens
+  - impulse
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638851617780470000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
+    revision: b5d928f5923583585b11d5c17531ff59c8c971c9
+    path: 
+  unityLifecycle:
+    version: 2.10.3
+    nextVersion: 
+    recommendedVersion: 3.1.0
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Bugfixes\n- Deoccluder did not always properly
+    reset its state.\n- Deoccluder and Decollider were introducing spurious damping
+    when the FreeLook orbit size changed.\n- Mac only: Some dropdowns and popups
+    in Cinemachine inspectors did not work consistently.\n- Regression fix: Confiner2D
+    was not always confining when a camera was newly activated.\n- RotationComposer
+    and PositionComposer no longer damp in response to composition changes from the
+    FreeLookModifier.\n- Fixed sample asset selection at import depending on current
+    render pipeline and input configuration.  You need to re-import the samples to
+    fix any existing issues.\n- Confiner2D was behaving inconsistently for large
+    sized bounding boxes due to precision issues.\n- StateDrivenCamera inspector
+    was not populating the states in the instruction list correctly.\n- Fixed a number
+    of issues causing ForceCameraPosition to not behave as expected.\n- Maximizing
+    an inspector which contained custom blends would generate console errors and
+    cause the inspector to be unresponsive.\n\n### Changed\n- Cinemachine Shot Editor
+    for Timeline no longer displays improper UX to create cameras when editing a
+    prefab.\n- The game-view composer guides dynamically reflect the current composition
+    when a FreeLookModifier is changing it.\n- When a FreeLookModifier is enabled
+    for composition, the game-view composer guides are no longer draggable.\n \n###
+    Added\n- Added Easing setting to FreeLookModifier, to smooth the transition between
+    top and bottom FreeLook hemispheres.\n- Added an overload for `CinemachineBrain.ManualUpdate`
+    which takes a custom frame count and deltaTime, allowing more customized control
+    over the game loop.\n- Added `CINEMACHINE_TRANSPARENT_POST_PROCESSING_BLENDS`
+    scripting define to tune the PostProcessing blend behaviour.\n- Added Signal
+    Combination Mode to Impulse Listener, to allow combining multiple impulse signals
+    in different ways."}'
+  assetStore:
+    productId: 
+  fingerprint: b66fdb7cd1f2f796860f420c11c2033b2262c986
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.10.3
+    minimumUnityVersion: 2022.3.0a1
 - packageId: com.unity.collab-proxy@2.8.2
   testable: 0
   isDirectDependency: 1
@@ -123,8 +422,10 @@ m_ResolvedPackages:
     - 2.8.1
     - 2.8.2
     compatible:
+    - 2.7.1
+    - 2.8.1
     - 2.8.2
-    recommended: 2.8.2
+    recommended: 2.7.1
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -165,7 +466,7 @@ m_ResolvedPackages:
     revision: c1fbc35e6bbae1ac0e9a3481e441dfdb3602b5ef
     path: 
   unityLifecycle:
-    version: 2.8.2
+    version: 2.7.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -183,69 +484,71 @@ m_ResolvedPackages:
   fingerprint: c854d1f7d97fbe1905f3e3591ded6fe77d96e654
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 2.8.2
+    minimumPackageVersion: 2.7.1
     minimumUnityVersion: 2021.3.0f1
-- packageId: com.unity.feature.development@1.0.2
+- packageId: com.unity.ide.visualstudio@2.0.23
   testable: 0
   isDirectDependency: 1
-  version: 1.0.2
-  source: 2
-  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.feature.development@767aadbc6eb7
-  assetPath: Packages/com.unity.feature.development
-  name: com.unity.feature.development
-  displayName: Engineering
+  version: 2.0.23
+  source: 1
+  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ide.visualstudio@198cdf337d13
+  assetPath: Packages/com.unity.ide.visualstudio
+  name: com.unity.ide.visualstudio
+  displayName: Visual Studio Editor
   author:
     name: 
     email: 
     url: 
   category: 
-  type: feature
-  description: "Optimize your development experience in Unity with the Dev Tools
-    feature set. Enable support for multiple integrated development environments
-    (IDE) for editing your Unity code. Get access to development tools to help you
-    test and analyze your project\u2019s performance."
+  type: 
+  description: Code editor integration for supporting Visual Studio as code editor
+    for unity. Adds support for generating csproj files for intellisense purposes,
+    auto discovery of installations, etc.
   errors: []
   versions:
     all:
     - 1.0.2
+    - 1.0.3
+    - 1.0.4
+    - 1.0.9
+    - 1.0.10
+    - 1.0.11
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.5
+    - 2.0.7
+    - 2.0.8
+    - 2.0.9
+    - 2.0.11
+    - 2.0.12
+    - 2.0.14
+    - 2.0.15
+    - 2.0.16
+    - 2.0.17
+    - 2.0.18
+    - 2.0.20
+    - 2.0.21
+    - 2.0.22
+    - 2.0.23
     compatible:
-    - 1.0.2
-    recommended: 1.0.2
+    - 2.0.22
+    - 2.0.23
+    recommended: 2.0.23
     deprecated: []
   dependencies:
-  - name: com.unity.ide.visualstudio
-    version: default
-  - name: com.unity.ide.rider
-    version: default
-  - name: com.unity.editorcoroutines
-    version: default
-  - name: com.unity.performance.profile-analyzer
-    version: default
   - name: com.unity.test-framework
-    version: default
-  - name: com.unity.testtools.codecoverage
-    version: default
+    version: 1.1.9
   resolvedDependencies:
-  - name: com.unity.ide.visualstudio
-    version: 2.0.23
   - name: com.unity.test-framework
-    version: 1.5.1
+    version: 1.4.6
   - name: com.unity.ext.nunit
     version: 2.0.5
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
-  - name: com.unity.ide.rider
-    version: 3.0.36
-  - name: com.unity.editorcoroutines
-    version: 1.0.0
-  - name: com.unity.performance.profile-analyzer
-    version: 1.2.3
-  - name: com.unity.testtools.codecoverage
-    version: 1.2.6
-  - name: com.unity.settings-manager
-    version: 2.1.0
   keywords: []
   registry:
     id: main
@@ -257,18 +560,18 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
+  datePublishedTicks: 638786696173840000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
+  hasRepository: 1
   repository:
-    type: 
-    url: 
-    revision: 
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
+    revision: 0fe3b29f9aff2b90b9f0962ae35036a824d3dd6b
     path: 
   unityLifecycle:
-    version: 1.0.2
+    version: 2.0.22
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -278,14 +581,168 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"quickstart":"https://docs.unity3d.com/Documentation/Manual/DeveloperToolsFeature.html"}'
+  upmReserved: '{"changelog":"Integration:\n\n- Monitor `additionalfile` extension
+    by default.\n- Try opening a Visual Studio Code workspace if there''s one (`.code-workspace`
+    file in the Unity project).\n\nProject generation:\n\n- Identify `asset`, `meta`,
+    `prefab` and `unity` files as `yaml` (Visual Studio Code).\n- Add `sln`/`csproj`
+    file nesting (Visual Studio Code).\n- Improve SDK style project generation."}'
   assetStore:
     productId: 
-  fingerprint: 767aadbc6eb72681a4ca807c8fa248e0230a0cef
+  fingerprint: 198cdf337d13c83ca953581515630d66b779e92b
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.0.2
-    minimumUnityVersion: 
+    minimumPackageVersion: 2.0.22
+    minimumUnityVersion: 2019.4.25f1
+- packageId: com.unity.inputsystem@1.13.1
+  testable: 0
+  isDirectDependency: 1
+  version: 1.13.1
+  source: 1
+  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.inputsystem@e2c83221d2dc
+  assetPath: Packages/com.unity.inputsystem
+  name: com.unity.inputsystem
+  displayName: Input System
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: A new input system which can be used as a more extensible and customizable
+    alternative to Unity's classic input system in UnityEngine.Input.
+  errors: []
+  versions:
+    all:
+    - 0.1.2-preview
+    - 0.2.0-preview
+    - 0.2.1-preview
+    - 0.2.6-preview
+    - 0.2.8-preview
+    - 0.2.10-preview
+    - 0.9.0-preview
+    - 0.9.1-preview
+    - 0.9.2-preview
+    - 0.9.3-preview
+    - 0.9.4-preview
+    - 0.9.5-preview
+    - 0.9.6-preview
+    - 1.0.0-preview
+    - 1.0.0-preview.1
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.0-preview.5
+    - 1.0.0-preview.6
+    - 1.0.0-preview.7
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.1.0-pre.5
+    - 1.1.0-pre.6
+    - 1.1.0-preview.1
+    - 1.1.0-preview.2
+    - 1.1.0-preview.3
+    - 1.1.1
+    - 1.2.0
+    - 1.3.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4
+    - 1.5.0
+    - 1.5.1
+    - 1.6.1
+    - 1.6.3
+    - 1.7.0
+    - 1.8.0-pre.1
+    - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.0
+    - 1.11.0
+    - 1.11.1
+    - 1.11.2
+    - 1.12.0
+    - 1.13.0
+    - 1.13.1
+    - 1.14.0
+    compatible:
+    - 1.13.1
+    - 1.14.0
+    recommended: 1.13.1
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.hierarchycore
+    version: 1.0.0
+  keywords:
+  - input
+  - events
+  - keyboard
+  - mouse
+  - gamepad
+  - touch
+  - vr
+  - xr
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638754888961480000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.13/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/InputSystem.git
+    revision: b026bb79971869f971db20399152e375b31bae01
+    path: 
+  unityLifecycle:
+    version: 1.13.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n- Fixed a problem with the logic to get
+    the active player settings object that cause an infinit reimport loop. [ISXB-1430](https://issuetracker.unity3d.com/product/unity/issues/guid/UUM-96793)\n-
+    Fixed an issue where removing a newly created action in the Asset Editor would
+    cause an exception. [UUM-95693](https://issuetracker.unity3d.com/product/unity/issues/guid/UUM-95693)\n-
+    Fixed arrow key navigation of Input Actions after Action rename. [ISXB-1024](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1024)\n-
+    Fixed gamepad navigation in UI Toolkit TextField when using InputSystemUIInputModule.
+    [UUM-77364](https://issuetracker.unity3d.com/product/unity/issues/guid/UUM-77364)\n-
+    Fixed issue where asset editor window splitter positions were not persisted [ISXB-1316]\n\n###
+    Changed\n- Changed default input action asset name from New Controls to New Actions."}'
+  assetStore:
+    productId: 
+  fingerprint: e2c83221d2dc3fc990b017cbd3f9d0742649c8a8
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.13.1
+    minimumUnityVersion: 2021.3.0a1
 - packageId: com.unity.multiplayer.center@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -567,7 +1024,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ugui@4f1c21fcc9bc
+  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ugui@c82f62fefab3
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -652,7 +1109,7 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-  fingerprint: 4f1c21fcc9bcee6987a89cc276da72ac77ce3db1
+  fingerprint: c82f62fefab33ce05e397f56634776192888900b
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.0
@@ -713,6 +1170,8 @@ m_ResolvedPackages:
     - 1.9.7
     - 1.9.8
     compatible:
+    - 1.9.5
+    - 1.9.6
     - 1.9.7
     - 1.9.8
     recommended: 1.9.8
@@ -754,7 +1213,7 @@ m_ResolvedPackages:
     revision: 8292335505915a41ec7c5cc8e08ac436e24120a9
     path: 
   unityLifecycle:
-    version: 1.9.7
+    version: 1.9.5
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -778,14 +1237,14 @@ m_ResolvedPackages:
   fingerprint: 6279e2b7c4858e56cca7f367cd38c49ef66778c9
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.9.7
+    minimumPackageVersion: 1.9.5
     minimumUnityVersion: 2021.3.0a1
 - packageId: com.unity.modules.accessibility@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.accessibility
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.accessibility
   assetPath: Packages/com.unity.modules.accessibility
   name: com.unity.modules.accessibility
   displayName: Accessibility
@@ -852,7 +1311,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.ai
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.ai
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -919,7 +1378,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.androidjni
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.androidjni
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -985,7 +1444,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.animation
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.animation
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1052,7 +1511,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.assetbundle
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.assetbundle
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1119,7 +1578,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.audio
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.audio
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1186,7 +1645,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.cloth
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.cloth
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1257,7 +1716,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.director
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.director
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1332,7 +1791,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.imageconversion
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.imageconversion
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1399,7 +1858,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.imgui
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.imgui
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1466,7 +1925,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.jsonserialize
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.jsonserialize
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1533,7 +1992,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.particlesystem
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.particlesystem
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1600,7 +2059,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1667,7 +2126,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics2d
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.physics2d
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1734,7 +2193,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.screencapture
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.screencapture
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1805,7 +2264,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrain
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrain
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1872,7 +2331,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrainphysics
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.terrainphysics
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -1947,7 +2406,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.tilemap
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.tilemap
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -2017,7 +2476,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.ui
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.ui
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -2084,7 +2543,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.uielements
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.uielements
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2167,7 +2626,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.umbra
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.umbra
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2234,7 +2693,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unityanalytics
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unityanalytics
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2308,7 +2767,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequest
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequest
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2375,7 +2834,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestassetbundle
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestassetbundle
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2450,7 +2909,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestaudio
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestaudio
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2525,7 +2984,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequesttexture
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequesttexture
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2600,7 +3059,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestwww
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.unitywebrequestwww
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2691,7 +3150,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.vehicles
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.vehicles
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2762,7 +3221,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.video
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.video
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2841,7 +3300,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.vr
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.vr
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2922,7 +3381,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.wind
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.wind
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -2989,7 +3448,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.xr
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.xr
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -3068,7 +3527,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.subsystems
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.subsystems
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -3139,7 +3598,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Applications/Unity/Hub/Editor/6000.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.hierarchycore
+  resolvedPath: /Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.modules.hierarchycore
   assetPath: Packages/com.unity.modules.hierarchycore
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
@@ -3201,398 +3660,12 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.0.0
     minimumUnityVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.23
+- packageId: com.unity.test-framework@1.4.6
   testable: 0
   isDirectDependency: 0
-  version: 2.0.23
+  version: 1.4.6
   source: 1
-  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ide.visualstudio@198cdf337d13
-  assetPath: Packages/com.unity.ide.visualstudio
-  name: com.unity.ide.visualstudio
-  displayName: Visual Studio Editor
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: Code editor integration for supporting Visual Studio as code editor
-    for unity. Adds support for generating csproj files for intellisense purposes,
-    auto discovery of installations, etc.
-  errors: []
-  versions:
-    all:
-    - 1.0.2
-    - 1.0.3
-    - 1.0.4
-    - 1.0.9
-    - 1.0.10
-    - 1.0.11
-    - 2.0.0
-    - 2.0.1
-    - 2.0.2
-    - 2.0.3
-    - 2.0.5
-    - 2.0.7
-    - 2.0.8
-    - 2.0.9
-    - 2.0.11
-    - 2.0.12
-    - 2.0.14
-    - 2.0.15
-    - 2.0.16
-    - 2.0.17
-    - 2.0.18
-    - 2.0.20
-    - 2.0.21
-    - 2.0.22
-    - 2.0.23
-    compatible:
-    - 2.0.23
-    recommended: 2.0.23
-    deprecated: []
-  dependencies:
-  - name: com.unity.test-framework
-    version: 1.1.9
-  resolvedDependencies:
-  - name: com.unity.test-framework
-    version: 1.5.1
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638786696173840000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: 0fe3b29f9aff2b90b9f0962ae35036a824d3dd6b
-    path: 
-  unityLifecycle:
-    version: 2.0.23
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"Integration:\n\n- Monitor `additionalfile` extension
-    by default.\n- Try opening a Visual Studio Code workspace if there''s one (`.code-workspace`
-    file in the Unity project).\n\nProject generation:\n\n- Identify `asset`, `meta`,
-    `prefab` and `unity` files as `yaml` (Visual Studio Code).\n- Add `sln`/`csproj`
-    file nesting (Visual Studio Code).\n- Improve SDK style project generation."}'
-  assetStore:
-    productId: 
-  fingerprint: 198cdf337d13c83ca953581515630d66b779e92b
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.0.23
-    minimumUnityVersion: 2019.4.25f1
-- packageId: com.unity.ide.rider@3.0.36
-  testable: 0
-  isDirectDependency: 0
-  version: 3.0.36
-  source: 1
-  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ide.rider@4d374c7eb6db
-  assetPath: Packages/com.unity.ide.rider
-  name: com.unity.ide.rider
-  displayName: JetBrains Rider Editor
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: The JetBrains Rider Editor package provides an integration for using
-    the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
-    .csproj files for code completion and auto-discovery of installations.
-  errors: []
-  versions:
-    all:
-    - 1.0.2
-    - 1.0.6
-    - 1.0.8
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2-preview
-    - 1.1.2-preview.2
-    - 1.1.3-preview.1
-    - 1.1.4-preview
-    - 1.1.4
-    - 1.2.0-preview
-    - 1.2.1
-    - 2.0.0-preview
-    - 2.0.1
-    - 2.0.2
-    - 2.0.3
-    - 2.0.5
-    - 2.0.7
-    - 3.0.1
-    - 3.0.2
-    - 3.0.3
-    - 3.0.4
-    - 3.0.5
-    - 3.0.6
-    - 3.0.7
-    - 3.0.9
-    - 3.0.10
-    - 3.0.12
-    - 3.0.13
-    - 3.0.14
-    - 3.0.15
-    - 3.0.16
-    - 3.0.17
-    - 3.0.18
-    - 3.0.20
-    - 3.0.21
-    - 3.0.22
-    - 3.0.24
-    - 3.0.25
-    - 3.0.26
-    - 3.0.27
-    - 3.0.28
-    - 3.0.31
-    - 3.0.34
-    - 3.0.35
-    - 3.0.36
-    compatible:
-    - 3.0.36
-    recommended: 3.0.36
-    deprecated: []
-  dependencies:
-  - name: com.unity.ext.nunit
-    version: 1.0.6
-  resolvedDependencies:
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638799562419060000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: b5315083ab3861d21f6ab2ed0d9514daf04bf208
-    path: 
-  unityLifecycle:
-    version: 3.0.36
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"- fix RIDER-124592 Avoid affecting \"Strip Engine Code\"
-    while IL2CPP debug enabled"}'
-  assetStore:
-    productId: 
-  fingerprint: 4d374c7eb6db6907c7e6925e3086c3c73f926e13
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 3.0.36
-    minimumUnityVersion: 2019.4.6f1
-- packageId: com.unity.editorcoroutines@1.0.0
-  testable: 0
-  isDirectDependency: 0
-  version: 1.0.0
-  source: 1
-  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.editorcoroutines@7d48783e7b8c
-  assetPath: Packages/com.unity.editorcoroutines
-  name: com.unity.editorcoroutines
-  displayName: Editor Coroutines
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: 'The editor coroutines package allows developers to start constructs
-    similar to Unity''s monobehaviour based coroutines within the editor using abitrary
-    objects. '
-  errors: []
-  versions:
-    all:
-    - 0.0.1-preview.3
-    - 0.0.1-preview.4
-    - 0.0.1-preview.5
-    - 0.0.2-preview.1
-    - 0.1.0-preview.1
-    - 0.1.0-preview.2
-    - 1.0.0
-    compatible:
-    - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - coroutine
-  - coroutines
-  - editor
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 637232611380000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.editorcoroutines.git
-    revision: f67fc9992bbc7a553b17375de53a8b2db136528e
-    path: 
-  unityLifecycle:
-    version: 1.0.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: 
-  assetStore:
-    productId: 
-  fingerprint: 7d48783e7b8cfcee5f8ef9ba787ed0d9dad4ebca
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.0.0
-    minimumUnityVersion: 2018.1.0a1
-- packageId: com.unity.performance.profile-analyzer@1.2.3
-  testable: 0
-  isDirectDependency: 0
-  version: 1.2.3
-  source: 1
-  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.performance.profile-analyzer@a68e7bc84997
-  assetPath: Packages/com.unity.performance.profile-analyzer
-  name: com.unity.performance.profile-analyzer
-  displayName: Profile Analyzer
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: "The Profile Analyzer tool supports the standard Unity Profiler. You
-    can use it to analyze multiple frames and multiple data sets of the CPU data
-    in the Profiler.\n\nMain features: \n\u25AA Multi-frame analysis of a single
-    set of Profiler CPU data \n\u25AA Comparison of two multi-frame profile scans
-    \n\n"
-  errors: []
-  versions:
-    all:
-    - 0.4.0-preview.3
-    - 0.4.0-preview.5
-    - 0.4.0-preview.6
-    - 0.5.0-preview.1
-    - 0.6.0-preview.1
-    - 0.7.0-preview.4
-    - 1.0.0
-    - 1.0.1
-    - 1.0.2
-    - 1.0.3
-    - 1.1.0-pre.2
-    - 1.1.0
-    - 1.1.1
-    - 1.2.2
-    - 1.2.3
-    compatible:
-    - 1.2.3
-    recommended: 1.2.3
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638699545898200000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.performance.profile-analyzer@1.2/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.performance.profile-analyzer.git
-    revision: 835e61d94bd201d0dea5763dff75e86b6b61de29
-    path: 
-  unityLifecycle:
-    version: 1.2.3
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n* Fixed minimum supported version in documentation.\n*
-    Fixed PROFB-199; Unchecking ''Hide Removed Markers'' doesn''t work."}'
-  assetStore:
-    productId: 
-  fingerprint: a68e7bc849973d943853204178d08a2bc7656ffe
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 1.2.3
-    minimumUnityVersion: 2020.3.0a1
-- packageId: com.unity.test-framework@1.5.1
-  testable: 0
-  isDirectDependency: 0
-  version: 1.5.1
-  source: 2
-  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.test-framework@e9eb633386e7
+  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.test-framework@5ac417e07314
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -3656,18 +3729,17 @@ m_ResolvedPackages:
     - 1.4.4
     - 1.4.5
     - 1.4.6
-    - 1.5.1
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
-    - 1.5.1
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    recommended: 1.5.1
+    recommended: 1.4.6
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -3696,18 +3768,18 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
+  datePublishedTicks: 638743524358990000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/index.html
+  hasRepository: 1
   repository:
-    type: 
-    url: 
-    revision: 
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.test-framework.git
+    revision: 9c6028f63a9b875e714b65de151b74e170152d49
     path: 
   unityLifecycle:
-    version: 1.5.1
+    version: 1.4.6
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -3717,93 +3789,92 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: 
+  upmReserved: '{"changelog":"- Fixed an issue where the architecture flag would
+    not be parsed for the StandaloneOSX platform.\n- Fixed an issue where the test
+    results ui and progress bar would not update before a user input, such as mouse
+    movement, was detected (UTF-609).\n- Fixed an issue where root of the test tree
+    was marked as NotRun, when all the tests were run and at least one test is ignore.\n-
+    Ensure that an error is raised and the test run is stopped if a playmode test
+    method exits playmode (DSTR-1091). \n- Async editmode tests are no longer throw
+    error when yielding a different value than null (DSTR-1066)\n- Fixed an issue
+    where the \"C# Test Script\" button was always disabled in One Column view in
+    Project tab. (DSTR-1083)\n- Async and UnityTest can now use ParametrizedIgnore
+    attribute. (DSTR-1068)\n- Corrected Timeout to only apply to the test method
+    and not the teardown methods, ensuring that TearDown is always run if a test
+    case times out (DSTR-1077).\n- Added a queue size indicator in the player side
+    test result ui. This can be used to track the progress of sending back result
+    data to the editor.\n- Parent node of the test tree is now updated after all
+    children finish running and have a result."}'
   assetStore:
     productId: 
-  fingerprint: e9eb633386e74717a4978296e116538a4051e958
+  fingerprint: 5ac417e07314c8f6afba8109738c32b82d391e68
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.5.1
-    minimumUnityVersion: 2022.3.0a1
-- packageId: com.unity.testtools.codecoverage@1.2.6
+    minimumPackageVersion: 1.4.6
+    minimumUnityVersion: 2019.4.1f1
+- packageId: com.unity.splines@2.7.2
   testable: 0
   isDirectDependency: 0
-  version: 1.2.6
+  version: 2.7.2
   source: 1
-  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.testtools.codecoverage@205a02cbcb39
-  assetPath: Packages/com.unity.testtools.codecoverage
-  name: com.unity.testtools.codecoverage
-  displayName: Code Coverage
+  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.splines@d3e1e500c9a0
+  assetPath: Packages/com.unity.splines
+  name: com.unity.splines
+  displayName: Splines
   author:
     name: 
     email: 
     url: 
-  category: 
-  type: assets
-  description: Use this package to export code coverage data and reports from your
-    automated tests. Additionally, the Code Coverage package offers a Coverage Recording
-    feature which allows capturing coverage data on demand, for manual testing or
-    when there are no automated tests in the project.
+  category: Tool
+  type: tool
+  description: Work with curves and paths. Use the Splines package to generate objects
+    and behaviors along paths, create trajectories, and draw shapes.
   errors: []
   versions:
     all:
-    - 0.2.0-preview
-    - 0.2.1-preview
-    - 0.2.2-preview
-    - 0.2.3-preview
-    - 0.3.0-preview
-    - 0.3.1-preview
-    - 0.4.0-preview
-    - 0.4.1-preview
-    - 0.4.2-preview
-    - 0.4.3-preview
-    - 1.0.0-pre.1
-    - 1.0.0-pre.2
-    - 1.0.0-pre.3
-    - 1.0.0-pre.4
+    - 0.1.0-preview.1
+    - 1.0.0-pre.5
+    - 1.0.0-pre.7
+    - 1.0.0-pre.8
+    - 1.0.0-pre.9
     - 1.0.0
     - 1.0.1
-    - 1.1.0
-    - 1.1.1
-    - 1.2.0-exp.1
-    - 1.2.0-exp.2
-    - 1.2.0-exp.3
-    - 1.2.0-exp.4
-    - 1.2.0-exp.5
-    - 1.2.0-exp.6
-    - 1.2.0-exp.7
-    - 1.2.0
-    - 1.2.1
-    - 1.2.2
-    - 1.2.3
-    - 1.2.4
-    - 1.2.5
-    - 1.2.6
+    - 2.0.0-pre.2
+    - 2.0.0-pre.4
+    - 2.0.0
+    - 2.1.0
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0
+    - 2.4.0
+    - 2.5.1
+    - 2.5.2
+    - 2.6.0
+    - 2.6.1
+    - 2.7.1
+    - 2.7.2
+    - 2.8.0
+    - 2.8.1
     compatible:
-    - 1.2.6
-    recommended: 1.2.6
+    - 2.7.2
+    - 2.8.0
+    - 2.8.1
+    recommended: 2.7.2
     deprecated: []
   dependencies:
-  - name: com.unity.test-framework
-    version: 1.0.16
+  - name: com.unity.mathematics
+    version: 1.2.1
   - name: com.unity.settings-manager
-    version: 1.0.1
+    version: 1.0.3
   resolvedDependencies:
-  - name: com.unity.test-framework
-    version: 1.5.1
-  - name: com.unity.ext.nunit
-    version: 2.0.5
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.3.2
   - name: com.unity.settings-manager
-    version: 2.1.0
+    version: 2.0.1
   keywords:
-  - test
-  - coverage
-  - testing
-  - opencover
+  - spline
+  - curve
+  - path
   registry:
     id: main
     name: 
@@ -3816,16 +3887,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638575857900000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/index.html
+  datePublishedTicks: 638678084074740000
+  documentationUrl: 
   hasRepository: 1
   repository:
     type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git
-    revision: 959db8ff97eedf9b211ad5cf320b87ac01f1e90f
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.splines.git
+    revision: f8048bc97f9cc23fe3db45eceb767e6ab97f37f5
     path: 
   unityLifecycle:
-    version: 1.2.6
+    version: 2.7.2
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -3835,102 +3906,36 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixes\n- Documentation: Fixed formatting in [Using
-    Code Coverage in batchmode](https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/CoverageBatchmode.html)
-    page (case [COV-40](https://issuetracker.unity3d.com/issues/docs-formatting-in-using-code-coverage-in-batchmode-docs-page-is-incorrect)).\n-
-    Removed the references to the deprecated FindObjectOfType method in the *Asteroids
-    sample project* (case [COV-42](https://issuetracker.unity3d.com/issues/sample-project-is-using-obsolete-findobjectoftype-method-which-causes-multiple-warnings-in-console-when-it-is-imported)).\n-
-    Added missing logs for the ReportGenerator (case [COV-46](https://issuetracker.unity3d.com/issues/code-coverage-package-does-not-report-some-of-the-internal-reportgenerator-errors))."}'
+  upmReserved: '{"changelog":"### Bug Fixes\n- [SPLB-315] Fixed a bug where the `DrawSplineTool`
+    icon was missing in the tools overlay.  \n- [STO-3434] Fixed a bug where the
+    `DrawSplineTool` would prevent the use of the view tool.\n- [STO-3435] Fixed
+    a bug where the `DrawSplineTool` would not display the tool settings anymore.
+    \n- [SPLB-296] Fixed a bug where a log message would appear in the console when
+    2 knots are at the same position with 0-length tangents.\n- [SPLB-304] Fixed
+    a bug where an exception would be thrown when using `SplineInstantiate` with
+    linear distance instantiate method and multiple splines. \n- Fixed some failures
+    related to the inline API documentation.\n- [SPLB-302] Fixed a bug where an exception
+    would be thrown when adding a knot to a closed spline from inspector.\n- [SPLB-311]
+    Fixed a bug where `SplineAnimate` component would not function properly with
+    non-uniform scale transforms.\n- Fixed compilation errors in builds\n- [SPLB-310]
+    Fixed mesh extrude not being saved when a change is applied to a mesh asset.
+    \n- [SPLB-303] Fixed a bug where spline section foldout labels (shape extrude,
+    geometry, advanced) did not unfold the sections when clicked.\n- [SPLB-294] Fixed
+    a bug where adding new splines by using the `SplineContainer` inspector would
+    dirty all open scenes."}'
   assetStore:
     productId: 
-  fingerprint: 205a02cbcb39584f20b51c49b853047aceb3a3a7
+  fingerprint: d3e1e500c9a0fa3a1e812117108982dd612c2e27
   editorCompatibility:
     compatibilityLevel: 0
-    minimumPackageVersion: 1.2.6
-    minimumUnityVersion: 2019.3.0a1
-- packageId: com.unity.settings-manager@2.1.0
-  testable: 0
-  isDirectDependency: 0
-  version: 2.1.0
-  source: 1
-  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.settings-manager@41738c275190
-  assetPath: Packages/com.unity.settings-manager
-  name: com.unity.settings-manager
-  displayName: Settings Manager
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: A framework for making any serializable field a setting, complete
-    with a pre-built settings interface.
-  errors: []
-  versions:
-    all:
-    - 0.1.0-preview.4
-    - 0.1.0-preview.8
-    - 1.0.0
-    - 1.0.1
-    - 1.0.2
-    - 1.0.3
-    - 2.0.0
-    - 2.0.1
-    - 2.1.0
-    compatible:
-    - 2.1.0
-    recommended: 2.1.0
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  entitlements:
-    licensingModel: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 638792046006940000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.settings-manager@2.1/manual/index.html
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
-    revision: 6eb5ed85eaf3276cc09f0cc4fc3311c72f0fc196
-    path: 
-  unityLifecycle:
-    version: 2.1.0
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  git:
-    hash: 
-    revision: 
-  upmReserved: '{"changelog":"### Changes\n\n- Enable Auto Reference on main assembly.\n\n###
-    Bug Fixes\n\n- [case: PBLD-56] Added tooltip to \"Options\" gear icon to specify
-    that context menu items are relevant only to the selected category."}'
-  assetStore:
-    productId: 
-  fingerprint: 41738c27519039c335849eb78949382f4d7a3544
-  editorCompatibility:
-    compatibilityLevel: 0
-    minimumPackageVersion: 2.1.0
+    minimumPackageVersion: 2.7.2
     minimumUnityVersion: 2022.3.0a1
 - packageId: com.unity.ext.nunit@2.0.5
   testable: 0
   isDirectDependency: 0
   version: 2.0.5
-  source: 2
-  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ext.nunit@031a54704bff
+  source: 1
+  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.ext.nunit@60ef35ffd3cd
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -3939,7 +3944,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Libraries
-  type: 
+  type: assets
   description: A custom version of NUnit used by Unity Test Framework. Based on NUnit
     version 3.5 and works with all platforms, il2cpp and Mono AOT.
   errors: []
@@ -3975,15 +3980,15 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638236642220000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ext.nunit@2.0/manual/index.html
-  hasRepository: 0
+  hasRepository: 1
   repository:
-    type: 
-    url: 
-    revision: 
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
+    revision: 469fe0d46bfc26fbb32a53885ca4d12abcdae4ae
     path: 
   unityLifecycle:
     version: 2.0.5
@@ -3996,12 +4001,177 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: 
+  upmReserved: '{"changelog":"- Fixing bug for InstanceID as struct changes"}'
   assetStore:
     productId: 
-  fingerprint: 031a54704bffe39e6a0324909f8eaa4565bdebf2
+  fingerprint: 60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.5
     minimumUnityVersion: 2019.4.0a1
-m_BuiltInPackagesHash: 2aed1efaaf8c3b1deb500134fc31ba2f79781a84
+- packageId: com.unity.mathematics@1.3.2
+  testable: 0
+  isDirectDependency: 0
+  version: 1.3.2
+  source: 1
+  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.mathematics@8017b507cc74
+  assetPath: Packages/com.unity.mathematics
+  name: com.unity.mathematics
+  displayName: Mathematics
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: Unity's C# SIMD math library providing vector types and math functions
+    with a shader like syntax.
+  errors: []
+  versions:
+    all:
+    - 0.0.12-preview.2
+    - 0.0.12-preview.5
+    - 0.0.12-preview.8
+    - 0.0.12-preview.10
+    - 0.0.12-preview.11
+    - 0.0.12-preview.13
+    - 0.0.12-preview.17
+    - 0.0.12-preview.19
+    - 0.0.12-preview.20
+    - 1.0.0-preview.1
+    - 1.0.1
+    - 1.1.0-preview.1
+    - 1.1.0
+    - 1.2.1
+    - 1.2.4
+    - 1.2.5
+    - 1.2.6
+    - 1.3.1
+    - 1.3.2
+    compatible:
+    - 1.3.2
+    recommended: 1.3.2
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638409134840000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.mathematics@1.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/Unity.Mathematics.git
+    revision: 1695a8503482a3131be78cc26308a93f82c05b04
+    path: 
+  unityLifecycle:
+    version: 1.3.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n* Fixed `math.hash` crash when using IL2CPP
+    builds on Arm 32 bit devices.\n* Fixed obsolete method usage warnings for `MatrixDrawer.CanCacheInspectorGUI`
+    and `PrimitiveVectorDrawer.CanCacheInspectorGUI` in UNITY_2023_2_OR_NEWER.\n*
+    Updated minimum editor version to 2021.3"}'
+  assetStore:
+    productId: 
+  fingerprint: 8017b507cc74bf0a1dd14b18aa860569f807314d
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.3.2
+    minimumUnityVersion: 2021.3.0a1
+- packageId: com.unity.settings-manager@2.0.1
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.1
+  source: 1
+  resolvedPath: /Users/kulvindersinghthakur/Downloads/Resume small Projects /-Solar-powered-spaceship--Assignment-/Solor-Powered-Spaceship/Library/PackageCache/com.unity.settings-manager@56a930affa1e
+  assetPath: Packages/com.unity.settings-manager
+  name: com.unity.settings-manager
+  displayName: Settings Manager
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: A framework for making any serializable field a setting, complete
+    with a pre-built settings interface.
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.4
+    - 0.1.0-preview.8
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 2.0.0
+    - 2.0.1
+    - 2.1.0
+    compatible:
+    - 2.0.1
+    - 2.1.0
+    recommended: 2.0.1
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637744099390000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
+    revision: 9b7c12d04ef880168151c127fd6b37b5931197dc
+    path: 
+  unityLifecycle:
+    version: 2.0.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  assetStore:
+    productId: 
+  fingerprint: 56a930affa1e4462d3595b5c19a1c2a4bf2015d2
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.0.1
+    minimumUnityVersion: 2018.4.0a1
+m_BuiltInPackagesHash: 5b01272dcf27ae79c1663fee4abedc3c995279a4
