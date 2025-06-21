@@ -1011,7 +1011,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.009882154, y: -0.66225636, z: -0.008735769, w: -0.7491617}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_Viewpoint:
     m_SceneView: {fileID: 15}
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 89
+    y: 24
     width: 666.5
     height: 349
   m_SerializedDataModeController:
@@ -1193,7 +1193,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 464
+    y: 399
     width: 666.5
     height: 298
   m_SerializedDataModeController:
@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_SimulatorState:
     controlPanelVisible: 0
-    controlPanelWidth: 0
+    controlPanelWidth: NaN
     controlPanelFoldoutKeys:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     controlPanelFoldoutValues: 00
@@ -1233,7 +1233,7 @@ MonoBehaviour:
     pluginStates:
     - '{}'
     - '{}'
-    scale: 21
+    scale: 10
     fitToScreenEnabled: 1
     rotationDegree: 90
     highlightSafeAreaEnabled: 0
@@ -1262,8 +1262,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 667.5
-    y: 89
+    x: 1
+    y: 24
     width: 371.5
     height: 355.5
   m_SerializedDataModeController:
@@ -1285,18 +1285,18 @@ MonoBehaviour:
       m_ExpandedIDs: debbffff24fbffff90860000b6860000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Fuel bar
-        m_OriginalName: Fuel bar
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -17438
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 11}
@@ -1328,8 +1328,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1041
-    y: 89
+    x: 374.5
+    y: 24
     width: 390
     height: 355.5
   m_SerializedDataModeController:
@@ -1472,8 +1472,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 667.5
-    y: 470.5
+    x: 1
+    y: 405.5
     width: 763.5
     height: 291.5
   m_SerializedDataModeController:
@@ -1518,7 +1518,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 172.79114}
     m_SelectedIDs: 24880000
     m_LastClickedID: 34852
-    m_ExpandedIDs: 000000002a8700002c8700002e870000308700003287000034870000368700001e88000000ca9a3b
+    m_ExpandedIDs: 000000004487000046870000488700004a8700004c8700004e87000050870000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1547,7 +1547,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002a8700002c8700002e87000030870000328700003487000036870000
+    m_ExpandedIDs: 000000004487000046870000488700004a8700004c8700004e87000050870000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

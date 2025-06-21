@@ -1,10 +1,9 @@
 
-using System;
-using System.Data.Common;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Solor.Player
+namespace Solar.Player
 {
     public class PlayerView : MonoBehaviour
     {
@@ -18,8 +17,10 @@ namespace Solor.Player
         public InputAction touchThrustAction;
         private Rigidbody rb;
 
-    
-       
+        public Transform cannonTransformPoint;
+
+     
+
         public void Initialized()
         {
             rb = GetComponent<Rigidbody>();
@@ -27,13 +28,25 @@ namespace Solor.Player
             touchDeltaAction = playerInput.actions["Move"];
             touchThrustAction = playerInput.actions["Thrust"];
             playerController.playerConfig.currentEnergy = playerController.playerConfig.maxEnergy;
-            playerController.playerConfig.currentFuel = playerController.playerConfig.maxEnergy;
+             playerController.playerConfig.currentFuel = playerController.playerConfig.maxEnergy;
+            StartShooting();
         }
 
+        public void StartShooting()
+        {
+             InvokeRepeating(nameof(FireFromController),2f, Random.Range(0.3f,0.5f));
+        }
+        private void FireFromController()
+        {
+            if (playerController != null)
+            {
+                playerController.HandleShooting();
+            }
+        }
         public void ConnectController()
         {
             touchThrustAction.canceled += OnThrustEnded;
-            playerController.playerConfig.currentEnergy = playerController.playerConfig.maxEnergy;
+            //playerController.playerConfig.currentEnergy = playerController.playerConfig.maxEnergy;
         }
 
         public void DisconnectController()

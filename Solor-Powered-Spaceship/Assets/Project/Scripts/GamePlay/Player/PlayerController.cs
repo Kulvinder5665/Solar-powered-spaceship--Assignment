@@ -1,31 +1,45 @@
+using Solar.Bullet;
 using UnityEngine;
 using UnityEngine.InputSystem;
-namespace Solor.Player
+namespace Solar.Player
 {
     public class PlayerController
     {
-        public PlayerView playerView;
-        public PlayerConfig playerConfig;
+        // Dependenics
+        private PlayerView playerView;
+        public  PlayerConfig playerConfig;
+        private BulletObjectPool bulletPool;
+
+        // Varibales
         private Rigidbody rb;
+    
+      
 
-        private Transform pos;
 
-        public PlayerController(PlayerView _playerView, PlayerConfig _playerConfig)
+        public PlayerController(PlayerView _playerView,
+                                 PlayerConfig _playerConfig, BulletObjectPool _bulletPool)
         {
             this.playerView = Object.Instantiate(_playerView);
             playerView.SetController(this);
             playerConfig = _playerConfig;
             playerView.Initialized();
             playerView.ConnectController();
-        
+            this.bulletPool = _bulletPool;
+            InitializeVaribale();
+        }
+
+        private void InitializeVaribale()
+        {
             this.rb = playerView.GetRigidbody();
+           
+           
         }
 
 
         #region Move Functions
         public void MoveForward()
         {
-          
+
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y, playerConfig.forwardspeed);
         }
         public void LeftRightMovement()
@@ -58,7 +72,7 @@ namespace Solor.Player
 
         public void OnThrusting()
         {
-          
+
             if (playerConfig.isThrusting && playerConfig.currentEnergy > 0)
             {
                 rb.AddForce(Vector3.up * playerConfig.thrustForce, ForceMode.Acceleration);
@@ -88,7 +102,7 @@ namespace Solor.Player
 
                 }
             }
-           
+
         }
 
         public void FuelUpdate()
@@ -106,6 +120,24 @@ namespace Solor.Player
             playerView.DisconnectController();
         }
         #endregion
+
+//Fire Logic
+        public void HandleShooting()
+        {
+            FireWeapon();
+        }
+
+        public void FireWeapon()
+        {
+            FireBulletAtPos(playerView.cannonTransformPoint);
+        }
+
+       public void FireBulletAtPos(Transform fireLoc)
+        {
+            BulletController bulletToFire = bulletPool.GetBullet();
+            bulletToFire.ConfigureBullet(fireLoc);
+            
+        }
     }
 
 }

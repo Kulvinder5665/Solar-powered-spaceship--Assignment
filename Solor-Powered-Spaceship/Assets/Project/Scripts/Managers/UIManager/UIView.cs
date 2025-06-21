@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-namespace Solor.UI
+namespace Solar.UI
 {
     public class UIView : MonoBehaviour
     {
@@ -11,27 +11,27 @@ namespace Solor.UI
         public Slider solarBarSlider;
         public Slider fuelBarSlider;
 
-        [Header("UI Panel ")]
-        public GameObject gameOverPanel;
-        public GameObject inGamePanel;
+        // [Header("UI Panel ")]
+        // public GameObject gameOverPanel;
+        // public GameObject inGamePanel;
 
-        [Header("UI Button and Text")]
-        public Button restartGame;
-        public Button quitGame;
+        // [Header("UI Button and Text")]
+        // public Button restartGame;
+        // public Button quitGame;
 
-        public TextMeshProUGUI pressOnScreen;
-        public TextMeshProUGUI scoreText;
-        public TextMeshProUGUI highScoreText;
-        void Start()
-        {
-            restartGame.onClick.AddListener(OnPressRestart);
-            quitGame.onClick.AddListener(OnPressQuit);
-        }
+        // public TextMeshProUGUI pressOnScreen;
+        // public TextMeshProUGUI scoreText;
+        // public TextMeshProUGUI highScoreText;
+        // void Start()
+        // {
+        //     restartGame.onClick.AddListener(OnPressRestart);
+        //     quitGame.onClick.AddListener(OnPressQuit);
+        // }
         void OnEnable()
         {
             GamerEventManager.OnEnergyChange += UpdateSolarEnergyBar;
             GamerEventManager.OnFuelChange += UpdateFuelEnergyBar;
-            GamerEventManager.OnPlayerDie += GameOver;
+           // GamerEventManager.OnPlayerDie += GameOver;
         }
         void OnDisable()
         {
@@ -53,18 +53,18 @@ namespace Solor.UI
             }
         }
 
-        void GameOver()
-        {
-            TogglePanel(gameOverPanel, true);
+        // void GameOver()
+        // {
+        //     TogglePanel(gameOverPanel, true);
 
-        }
+        // }
 
-        void TogglePanel(GameObject panel, bool toggle)
-        {
-            panel.gameObject.SetActive(toggle);
-        }
+    //     void TogglePanel(GameObject panel, bool toggle)
+    //     {
+    //         panel.gameObject.SetActive(toggle);
+    //     }
 
-        void OnPressRestart() => SceneManager.LoadSceneAsync(0);
-        void OnPressQuit() => Application.Quit();
-    }
+    //     void OnPressRestart() => SceneManager.LoadSceneAsync(0);
+    //     void OnPressQuit() => Application.Quit();
+     }
 }

@@ -403,7 +403,13 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Project/Scripts/GamePlay/Bullets/BulletController.cs"
+"Assets/Project/Scripts/GamePlay/Bullets/BulletObjectPool.cs"
+"Assets/Project/Scripts/GamePlay/Bullets/BulletsScriptableObject.cs"
+"Assets/Project/Scripts/GamePlay/Bullets/BulletsView.cs"
+"Assets/Project/Scripts/GamePlay/Bullets/IBullets.cs"
 "Assets/Project/Scripts/GamePlay/Camera/FollowPlayer.cs"
+"Assets/Project/Scripts/GamePlay/Interfaces/IDamageable.cs"
 "Assets/Project/Scripts/GamePlay/Player/PlayerConfig.cs"
 "Assets/Project/Scripts/GamePlay/Player/PlayerController.cs"
 "Assets/Project/Scripts/GamePlay/Player/PlayerService.cs"
@@ -412,6 +418,8 @@
 "Assets/Project/Scripts/Managers/GamerEventManager.cs"
 "Assets/Project/Scripts/Managers/Service/GameService.cs"
 "Assets/Project/Scripts/Managers/UIManager/UIView.cs"
+"Assets/Project/Scripts/Utilities/GenericMonoSingleton.cs"
+"Assets/Project/Scripts/Utilities/GenericObjectPool.cs"
 -langversion:9.0
 /deterministic
 /optimize+
