@@ -1,5 +1,7 @@
 
 
+using System.Data.Common;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,26 +17,99 @@ namespace Solar.Player
         private PlayerInput playerInput;
         public InputAction touchDeltaAction;
         public InputAction touchThrustAction;
+        public InputAction touchPositionAction;
         private Rigidbody rb;
 
         public Transform cannonTransformPoint;
+        private bool isTouching;
+        private Vector2 currentDelta;
+        private Vector2 currentPos;
 
-     
+        public void Activate()=>  enabled = true;
 
         public void Initialized()
         {
             rb = GetComponent<Rigidbody>();
             playerInput = GetComponent<PlayerInput>();
+
             touchDeltaAction = playerInput.actions["Move"];
             touchThrustAction = playerInput.actions["Thrust"];
+            touchPositionAction = playerInput.actions["TouchPosition"];
+
+
+
             playerController.playerConfig.currentEnergy = playerController.playerConfig.maxEnergy;
-             playerController.playerConfig.currentFuel = playerController.playerConfig.maxEnergy;
+            playerController.playerConfig.currentFuel = playerController.playerConfig.maxEnergy;
             StartShooting();
+        }
+
+
+        public void ConnectController()
+        {
+          //  touchThrustAction.started += ctx => OnThrustStarted();
+           // touchThrustAction.canceled += ctx => OnThrustEnded();
+
+        }
+
+        public void DisconnectController()
+        {
+            //touchThrustAction.canceled -= ctx => OnThrustEnded();
+          //  touchThrustAction.started -= ctx => OnThrustStarted();
+            
+        }
+     
+     
+        
+  
+        void Update()
+        {
+            //playerController.LeftRightMovement();
+            if (Touchscreen.current != null && Touchscreen.current.touches.Count > 0) {
+
+
+                bool isThrusting = false;
+                Vector2 totalDelta = Vector2.zero;
+                foreach (var touch in Touchscreen.current.touches)
+                {
+                    if (touch.press.isPressed)
+                    {
+                        Vector2 pos = touch.position.ReadValue();
+                        if (pos.x > Screen.width / 2)
+                        {
+                            isThrusting = true;
+                        }
+                        Vector2 delta = touch.delta.ReadValue();
+                        totalDelta += delta;
+                    }
+                 }
+              //  currentDelta = touchDeltaAction.ReadValue<Vector2>();
+               /// currentPos = touchPositionAction.ReadValue<Vector2>();
+
+
+                // bool isThrusting = currentPos.x > Screen.width / 2;
+                playerController.LeftRightMovement(totalDelta);
+                playerController.SetThrusting(isThrusting);
+            }
+            else
+            {
+
+                playerController.SetThrusting(false);
+                
+            }
+            playerController.FuelUpdate();
+        }
+      
+        void FixedUpdate()
+        {
+            if (playerController == null) return;
+            playerController.MoveForward();
+            playerController.OnThrusting();
+
         }
 
         public void StartShooting()
         {
-             InvokeRepeating(nameof(FireFromController),2f, Random.Range(0.3f,0.5f));
+            InvokeRepeating(nameof(FireFromController), 2f, Random.Range(0.3f, 0.5f));
         }
         private void FireFromController()
         {
@@ -43,38 +118,6 @@ namespace Solar.Player
                 playerController.HandleShooting();
             }
         }
-        public void ConnectController()
-        {
-            touchThrustAction.canceled += OnThrustEnded;
-            //playerController.playerConfig.currentEnergy = playerController.playerConfig.maxEnergy;
-        }
-
-        public void DisconnectController()
-        {
-            touchThrustAction.canceled -= OnThrustEnded;
-        }
-
-        public void OnThrustEnded(InputAction.CallbackContext ctx)
-        {
-            if (playerController != null)
-            {
-                playerController.playerConfig.isThrusting = false;
-            }
-        }
-
-        void Update()
-        {
-            playerController.LeftRightMovement();
-            playerController.FuelUpdate();
-        }
-        void FixedUpdate()
-        {
-            playerController.MoveForward();
-            playerController.OnThrusting();
-          
-        }
-
-
 
         public void SetController(PlayerController _playerController) => this.playerController = _playerController;
         public Rigidbody GetRigidbody()

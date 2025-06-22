@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 0
-  maxFuel: 90
-  currentFuel: -29.658575
+  deathDelay: 2
+  maxFuel: 20
+  currentFuel: 46.06757
   FuelDrainRate: 5
   forwardspeed: 1
   smoothTime: 2
   TouchSensitivity: 0.5
-  maxEnergy: 4
-  currentEnergy: -0.019996356
+  maxEnergy: 100
+  currentEnergy: 96.56058
   thrustForce: 2
   energyDrainRate: 1
-  fallSpeed: 20
+  fallSpeed: 50
   isThrusting: 0

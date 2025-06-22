@@ -8,6 +8,7 @@ namespace Solar.Player
         [Header("Movement Setting")]
         public int health;
         public int maxHealth;
+        public int deathDelay =2 ;
 
         public float maxFuel = 100f;
         public float currentFuel;

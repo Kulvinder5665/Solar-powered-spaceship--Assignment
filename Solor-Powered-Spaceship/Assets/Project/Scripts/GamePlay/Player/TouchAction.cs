@@ -102,8 +102,17 @@ public partial class @TouchAction: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Thrust"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""1d302a79-d981-4254-9186-357ace7c9360"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""TouchPosition"",
+                    ""type"": ""Value"",
+                    ""id"": ""6375a2f5-3d3c-45ea-923f-81108b30c14a"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -176,6 +185,17 @@ public partial class @TouchAction: IInputActionCollection2, IDisposable
                     ""action"": ""Thrust"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0c69c3af-295e-49b4-b182-a73259fc850a"",
+                    ""path"": ""<Touchscreen>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TouchPosition"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -186,6 +206,7 @@ public partial class @TouchAction: IInputActionCollection2, IDisposable
         m_Touch = asset.FindActionMap("Touch", throwIfNotFound: true);
         m_Touch_Move = m_Touch.FindAction("Move", throwIfNotFound: true);
         m_Touch_Thrust = m_Touch.FindAction("Thrust", throwIfNotFound: true);
+        m_Touch_TouchPosition = m_Touch.FindAction("TouchPosition", throwIfNotFound: true);
     }
 
     ~@TouchAction()
@@ -268,6 +289,7 @@ public partial class @TouchAction: IInputActionCollection2, IDisposable
     private List<ITouchActions> m_TouchActionsCallbackInterfaces = new List<ITouchActions>();
     private readonly InputAction m_Touch_Move;
     private readonly InputAction m_Touch_Thrust;
+    private readonly InputAction m_Touch_TouchPosition;
     /// <summary>
     /// Provides access to input actions defined in input action map "Touch".
     /// </summary>
@@ -287,6 +309,10 @@ public partial class @TouchAction: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Touch/Thrust".
         /// </summary>
         public InputAction @Thrust => m_Wrapper.m_Touch_Thrust;
+        /// <summary>
+        /// Provides access to the underlying input action "Touch/TouchPosition".
+        /// </summary>
+        public InputAction @TouchPosition => m_Wrapper.m_Touch_TouchPosition;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -319,6 +345,9 @@ public partial class @TouchAction: IInputActionCollection2, IDisposable
             @Thrust.started += instance.OnThrust;
             @Thrust.performed += instance.OnThrust;
             @Thrust.canceled += instance.OnThrust;
+            @TouchPosition.started += instance.OnTouchPosition;
+            @TouchPosition.performed += instance.OnTouchPosition;
+            @TouchPosition.canceled += instance.OnTouchPosition;
         }
 
         /// <summary>
@@ -336,6 +365,9 @@ public partial class @TouchAction: IInputActionCollection2, IDisposable
             @Thrust.started -= instance.OnThrust;
             @Thrust.performed -= instance.OnThrust;
             @Thrust.canceled -= instance.OnThrust;
+            @TouchPosition.started -= instance.OnTouchPosition;
+            @TouchPosition.performed -= instance.OnTouchPosition;
+            @TouchPosition.canceled -= instance.OnTouchPosition;
         }
 
         /// <summary>
@@ -390,5 +422,12 @@ public partial class @TouchAction: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnThrust(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "TouchPosition" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnTouchPosition(InputAction.CallbackContext context);
     }
 }

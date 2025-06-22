@@ -16,8 +16,17 @@
                 },
                 {
                     "name": "Thrust",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "1d302a79-d981-4254-9186-357ace7c9360",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "TouchPosition",
+                    "type": "Value",
+                    "id": "6375a2f5-3d3c-45ea-923f-81108b30c14a",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -88,6 +97,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Thrust",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c69c3af-295e-49b4-b182-a73259fc850a",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPosition",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

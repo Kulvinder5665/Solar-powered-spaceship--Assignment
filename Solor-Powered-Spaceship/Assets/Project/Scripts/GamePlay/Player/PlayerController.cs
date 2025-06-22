@@ -1,6 +1,7 @@
+using System.Threading.Tasks;
 using Solar.Bullet;
 using UnityEngine;
-using UnityEngine.InputSystem;
+
 namespace Solar.Player
 {
     public class PlayerController
@@ -12,64 +13,71 @@ namespace Solar.Player
 
         // Varibales
         private Rigidbody rb;
-    
-      
+        private int currentHealth;
+
 
 
         public PlayerController(PlayerView _playerView,
                                  PlayerConfig _playerConfig, BulletObjectPool _bulletPool)
         {
             this.playerView = Object.Instantiate(_playerView);
-            playerView.SetController(this);
             playerConfig = _playerConfig;
-            playerView.Initialized();
-            playerView.ConnectController();
             this.bulletPool = _bulletPool;
+
+            playerView.SetController(this);
+
+            playerView.Initialized();
             InitializeVaribale();
+            playerView.ConnectController();
+            playerView.Activate();
         }
 
         private void InitializeVaribale()
         {
-            this.rb = playerView.GetRigidbody();
-           
-           
+              this.rb = playerView.GetRigidbody();
+           currentHealth = playerConfig.maxHealth;
+        
         }
 
 
         #region Move Functions
         public void MoveForward()
         {
-
+            if (rb == null) return;
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y, playerConfig.forwardspeed);
         }
-        public void LeftRightMovement()
+        public void LeftRightMovement(Vector2 delta)
         {
-            if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
-            {
-                Vector2 touchpos = Touchscreen.current.primaryTouch.position.ReadValue();
-                if (touchpos.x > Screen.width / 2)
-                {
-                    playerConfig.isThrusting = true;
-                }
-                else
-                {
-                    playerConfig.isThrusting = false;
-                }
+            //     if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
+            //     {
+            // Vector2 touchpos = Touchscreen.current.primaryTouch.position.ReadValue();
+            //   Vector2 delta = Touchscreen.current.primaryTouch.delta.ReadValue();
 
-                Vector2 delta = Touchscreen.current.primaryTouch.delta.ReadValue();
 
-                float dragAmountX = delta.x * playerConfig.TouchSensitivity * Time.deltaTime;
-                Vector3 pos = playerView.transform.position;
-                pos.x += dragAmountX;
-                playerView.transform.position = pos;
+            //  playerConfig.isThrusting = touchpos.x > Screen.width / 2;
 
-            }
-            else
-            {
-                playerConfig.isThrusting = false;
-            }
+
+
+            float dragAmountX = delta.x * playerConfig.TouchSensitivity * Time.deltaTime;
+            // Vector3 pos = playerView.transform.position;
+            // pos.x += dragAmountX;
+            // playerView.transform.position = pos;
+            Vector3 targetPos = rb.position;
+            targetPos.x += dragAmountX;
+
+            rb.MovePosition(targetPos);
+
+           // }
+            // else
+            // {
+            //     playerConfig.isThrusting = false;
+            // }
         }
 
+        public void SetThrusting(bool thrusting)
+        {
+            playerConfig.isThrusting = thrusting;
+        }
         public void OnThrusting()
         {
 
@@ -81,22 +89,20 @@ namespace Solar.Player
             }
             else
             {
-                if (rb.linearVelocity.y < 0)
-                {
-                    Vector3 vel = rb.linearVelocity;
-                    vel.y = 0f;
-                    rb.linearVelocity = vel;
 
-                }
-                if (rb.position.y > 0)
+
+                Vector3 pos = rb.position;
+
+                
+                if (pos.y > 0)
                 {
-                    Vector3 pos = rb.position;
+             
                     pos.y = Mathf.Max(0f, pos.y - playerConfig.fallSpeed * Time.fixedDeltaTime);
                     rb.MovePosition(pos);
                 }
-                else if (rb.position.y < 0)
+                else if (pos.y < 0f)
                 {
-                    Vector3 pos = rb.position;
+                 ;
                     pos.y = 0f;
                     rb.MovePosition(pos);
 
@@ -115,6 +121,24 @@ namespace Solar.Player
         }
         public Vector3 GetPlayerPos() => playerView != null ? playerView.transform.position : default;
 
+        //Player Health Logic 
+        public void TakeDamage(int damageToTake){
+            currentHealth -= damageToTake;
+            if(currentHealth<=0){
+                PlayerDeath();
+            }
+        }
+
+        private async void PlayerDeath()
+        {
+            Object.Destroy(playerView.gameObject);
+            // Stop the enemy spawn and power up spawn
+
+            //Wait for the player ship Destruction
+            await Task.Delay(playerConfig.deathDelay * 1000);
+            GameService.Instance.GetUIService().EnableGameOverUI();
+
+        }
         private void OnDestroy()
         {
             playerView.DisconnectController();
