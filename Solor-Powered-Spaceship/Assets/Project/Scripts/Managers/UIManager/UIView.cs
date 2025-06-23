@@ -21,15 +21,17 @@ namespace Solar.UI
         public Button restartGameBtn;
         public Button quitGameBtn;
 
-        // public TextMeshProUGUI pressOnScreen;
+     
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI highScoreText;
 
         //private Variable 
         private int currentScore;
         private float scoreTimer;
+      
         void Start()
         {
+            
             InitialSetUp();
         }
 
@@ -56,7 +58,7 @@ namespace Solar.UI
                 if (scoreTimer >= 1f)
                 {
                     currentScore ++;
-                    scoreText.SetText(currentScore.ToString());
+                    scoreText.SetText("Score : " +currentScore.ToString());
                     scoreTimer = 0f;
                 }
             }
@@ -92,15 +94,17 @@ namespace Solar.UI
         public void OnPlayButtonClicked()
         {
             Time.timeScale = 1;
+
             mainMenuPanel.SetActive(false);
             inGamePanel.SetActive(true);
+            GamerEventManager.GameStarted();
             
             
         }
         public void IncrementScore()
         {
             currentScore = (int)Time.deltaTime;
-            scoreText.SetText(currentScore.ToString());
+            scoreText.SetText("Score : " +currentScore.ToString());
         }
 
 
@@ -128,7 +132,7 @@ namespace Solar.UI
                 highScore = currentScore;
             }
 
-            highScoreText.SetText("High Score:" + highScore.ToString());
+            highScoreText.SetText("High Score: " + highScore.ToString());
         }
 
         // Need some  rebuilding

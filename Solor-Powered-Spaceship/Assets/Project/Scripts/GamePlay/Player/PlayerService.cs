@@ -16,7 +16,7 @@ namespace Solar.Player
             playerController = new PlayerController(playerViewPrefab, playerScriptableObject, bulletPool);
         }
 
-        public PlayerController GetPlayerController => playerController;
+        public PlayerController  GetPlayerController()=> playerController;
         public Vector3 GetPlayerPosition() => playerController.GetPlayerPos();
         public void ReturnBulletToPool(BulletController bulletToReturn) => bulletPool.ReturnItem(bulletToReturn);
     }

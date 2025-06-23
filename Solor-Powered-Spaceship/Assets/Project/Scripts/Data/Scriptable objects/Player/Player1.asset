@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Player1
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 0
+  maxHealth: 1
   deathDelay: 2
-  maxFuel: 20
-  currentFuel: 46.06757
-  FuelDrainRate: 5
-  forwardspeed: 1
+  maxFuel: 100
+  currentFuel: 56.832603
+  FuelDrainRate: 1
+  forwardspeed: 5
   smoothTime: 2
-  TouchSensitivity: 0.5
-  maxEnergy: 100
-  currentEnergy: 96.56058
-  thrustForce: 2
-  energyDrainRate: 1
-  fallSpeed: 50
+  TouchSensitivity: 2
+  maxEnergy: 10
+  currentEnergy: 10
+  thrustForce: 3
+  energyDrainRate: 2
+  fallSpeed: 20
   isThrusting: 0

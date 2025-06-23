@@ -1,22 +1,16 @@
 
+using Solar.Utilities;
 using UnityEngine;
 
-public class FollowPlayer : MonoBehaviour
+public class FollowPlayer :MonoBehaviour
 {
-    private GameObject playerPrefab;
+    // public Transform playerPrefab;
     public Vector3 offset;
-    void Start()
-    {
-        if (playerPrefab == null)
-        {
-            playerPrefab = GameObject.FindGameObjectWithTag("Player");
-        }
-
-
-    }
+    
 
     private void LateUpdate() {
         
-       transform.position = playerPrefab.transform.position + offset;
+        if(GameService.Instance.playerTrans!= null)
+       transform.position =GameService.Instance.playerTrans.position+ offset;
     }
 }

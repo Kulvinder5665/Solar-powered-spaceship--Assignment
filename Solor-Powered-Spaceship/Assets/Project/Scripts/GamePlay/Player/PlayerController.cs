@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using Solar.Bullet;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Solar.Player
@@ -7,7 +8,7 @@ namespace Solar.Player
     public class PlayerController
     {
         // Dependenics
-        private PlayerView playerView;
+        public PlayerView playerView;
         public  PlayerConfig playerConfig;
         private BulletObjectPool bulletPool;
 
@@ -20,16 +21,18 @@ namespace Solar.Player
         public PlayerController(PlayerView _playerView,
                                  PlayerConfig _playerConfig, BulletObjectPool _bulletPool)
         {
-            this.playerView = Object.Instantiate(_playerView);
-            playerConfig = _playerConfig;
-            this.bulletPool = _bulletPool;
+        
+                this.playerView = Object.Instantiate(_playerView);
+                playerConfig = _playerConfig;
+                this.bulletPool = _bulletPool;
 
-            playerView.SetController(this);
+                playerView.SetController(this);
 
-            playerView.Initialized();
-            InitializeVaribale();
-            playerView.ConnectController();
-            playerView.Activate();
+                playerView.Initialized();
+                InitializeVaribale();
+            //   playerView.ConnectController();
+                playerView.Activate();
+            
         }
 
         private void InitializeVaribale()
@@ -46,32 +49,15 @@ namespace Solar.Player
             if (rb == null) return;
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, rb.linearVelocity.y, playerConfig.forwardspeed);
         }
+
         public void LeftRightMovement(Vector2 delta)
         {
-            //     if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
-            //     {
-            // Vector2 touchpos = Touchscreen.current.primaryTouch.position.ReadValue();
-            //   Vector2 delta = Touchscreen.current.primaryTouch.delta.ReadValue();
-
-
-            //  playerConfig.isThrusting = touchpos.x > Screen.width / 2;
-
-
 
             float dragAmountX = delta.x * playerConfig.TouchSensitivity * Time.deltaTime;
-            // Vector3 pos = playerView.transform.position;
-            // pos.x += dragAmountX;
-            // playerView.transform.position = pos;
             Vector3 targetPos = rb.position;
             targetPos.x += dragAmountX;
-
             rb.MovePosition(targetPos);
 
-           // }
-            // else
-            // {
-            //     playerConfig.isThrusting = false;
-            // }
         }
 
         public void SetThrusting(bool thrusting)
@@ -139,10 +125,10 @@ namespace Solar.Player
             GameService.Instance.GetUIService().EnableGameOverUI();
 
         }
-        private void OnDestroy()
-        {
-            playerView.DisconnectController();
-        }
+        // private void OnDestroy()
+        // {
+        //     playerView.DisconnectController();
+        // }
         #endregion
 
 //Fire Logic

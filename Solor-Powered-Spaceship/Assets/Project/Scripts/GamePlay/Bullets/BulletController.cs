@@ -23,6 +23,7 @@ namespace Solar.Bullet
 
         public void ConfigureBullet(Transform spawnTrans)
         {
+            InitizleVar();
             bulletsView.gameObject.SetActive(true);
             bulletsView.transform.position = spawnTrans.position;
             // bulletsView.transform.rotation = spawnTrans.rotation;
@@ -36,7 +37,7 @@ namespace Solar.Bullet
                 collidedObject.GetComponent<IDamageable>().TakeDamage(bulletsScriptableObject.damge);
                 //GameService.Instance
                 bulletsView.gameObject.SetActive(false);
-                GameService.Instance.GetPlayerService.ReturnBulletToPool(this);
+                GameService.Instance.GetPlayerService().ReturnBulletToPool(this);
 
             }
         }
@@ -44,9 +45,9 @@ namespace Solar.Bullet
         public void OnTimeEnded()
         {
             currentTime -= Time.deltaTime;
-            if (currentTime < 0)
+            if (currentTime <= 0)
             {
-                GameService.Instance.GetPlayerService.ReturnBulletToPool(this);
+                GameService.Instance.GetPlayerService().ReturnBulletToPool(this);
             }
         }
     }

@@ -12,8 +12,9 @@ namespace Solar.Bullet
             bulletController.OnTimeEnded();
         }
 
-        private void OggerEnter(Collider collision)
-        {
+        private void OnTriggerEnter(Collider collision) {
+            
+     
             bulletController?.OnBulletEnteredTrigger(collision.gameObject);
         }
     }

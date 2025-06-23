@@ -39,24 +39,24 @@ namespace Solar.Player
 
 
             playerController.playerConfig.currentEnergy = playerController.playerConfig.maxEnergy;
-            playerController.playerConfig.currentFuel = playerController.playerConfig.maxEnergy;
+            playerController.playerConfig.currentFuel = playerController.playerConfig.maxFuel;
             StartShooting();
         }
 
 
-        public void ConnectController()
-        {
-          //  touchThrustAction.started += ctx => OnThrustStarted();
-           // touchThrustAction.canceled += ctx => OnThrustEnded();
+        // public void ConnectController()
+        // {
+        //   //  touchThrustAction.started += ctx => OnThrustStarted();
+        //    // touchThrustAction.canceled += ctx => OnThrustEnded();
 
-        }
+        // }
 
-        public void DisconnectController()
-        {
-            //touchThrustAction.canceled -= ctx => OnThrustEnded();
-          //  touchThrustAction.started -= ctx => OnThrustStarted();
+        // public void DisconnectController()
+        // {
+        //     //touchThrustAction.canceled -= ctx => OnThrustEnded();
+        //   //  touchThrustAction.started -= ctx => OnThrustStarted();
             
-        }
+        // }
      
      
         
@@ -82,11 +82,7 @@ namespace Solar.Player
                         totalDelta += delta;
                     }
                  }
-              //  currentDelta = touchDeltaAction.ReadValue<Vector2>();
-               /// currentPos = touchPositionAction.ReadValue<Vector2>();
-
-
-                // bool isThrusting = currentPos.x > Screen.width / 2;
+           
                 playerController.LeftRightMovement(totalDelta);
                 playerController.SetThrusting(isThrusting);
             }
