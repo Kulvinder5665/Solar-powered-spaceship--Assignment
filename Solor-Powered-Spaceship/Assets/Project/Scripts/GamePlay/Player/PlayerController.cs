@@ -102,7 +102,7 @@ namespace Solar.Player
 
         public void FuelUpdate()
         {
-            if (playerConfig.currentEnergy > 0)
+            if (playerConfig.currentFuel > 0 )
             {
                 playerConfig.currentFuel -= playerConfig.FuelDrainRate * Time.deltaTime;
                 playerConfig.currentFuel = Mathf.Max(0, playerConfig.currentFuel);
