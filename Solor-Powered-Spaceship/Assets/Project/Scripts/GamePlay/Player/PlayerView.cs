@@ -119,10 +119,7 @@ namespace Solar.Player
             return rb;
         }
 
-        // public void OnTriggerWithPayer(GameObject collision)
-        // {
-           
-        // }
+     
     }
 }
 

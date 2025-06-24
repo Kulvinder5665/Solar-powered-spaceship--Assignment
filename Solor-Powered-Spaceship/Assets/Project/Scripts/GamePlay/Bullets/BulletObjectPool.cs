@@ -23,7 +23,9 @@ namespace Solar.Bullet {
             {
                 Debug.LogError("Bullet view Prefab is null in BulletObjectPool");
             }
-          return new BulletController(bulletsViewPrefab, bulletData);
+            return new BulletController(bulletsViewPrefab, bulletData);
         }
+
+      
         }
 }

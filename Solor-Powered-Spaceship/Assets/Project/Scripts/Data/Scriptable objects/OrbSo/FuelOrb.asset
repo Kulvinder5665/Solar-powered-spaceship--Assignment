@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: FuelOrb
   m_EditorClassIdentifier: 
   orbData:
-    refillAmount: 60
+    refillAmount: 20
     orbType: 0
-  initialSpawnRate: 5
+  initialSpawnRate: 0.5

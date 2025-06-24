@@ -12,12 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39470b23db8d43f6b2245f321a836ba, type: 3}
   m_Name: Enemy2
   m_EditorClassIdentifier: 
-  initialSpawnRate: 3
-  spawnDistance: 3
-  miniSpawnRate: 3
-  difficultyRate: 3
+  initialSpawnRate: 1
   enemydata:
     maxHealth: 1
     DamgeOnCollide: 1
-    enemyMaterial: {fileID: 2100000, guid: 24c99a78f7c154e0589fbf0b88ffe60c, type: 2}
+    moveSpeed: 20
     enemyType: 1

@@ -10,6 +10,7 @@ namespace Solar.Enemy
         // public float spawnDistance;
         // public float miniSpawnRate;
         // public float difficultyRate;
+      
         public Enemydata enemydata;
     }
 
@@ -18,7 +19,9 @@ namespace Solar.Enemy
     {
         public int maxHealth;
         public int DamgeOnCollide;
+        public float moveSpeed;
         public EnemyType enemyType;
+       
     }
 
     public enum EnemyType

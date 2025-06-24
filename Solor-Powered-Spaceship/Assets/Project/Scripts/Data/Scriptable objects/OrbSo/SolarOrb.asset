@@ -15,4 +15,4 @@ MonoBehaviour:
   orbData:
     refillAmount: 10
     orbType: 1
-  initialSpawnRate: 5
+  initialSpawnRate: 2

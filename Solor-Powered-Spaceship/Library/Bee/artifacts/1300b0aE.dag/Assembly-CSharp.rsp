@@ -405,6 +405,7 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.0.43f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Project/Scripts/GamePlay/Bullets/BulletController.cs"
 "Assets/Project/Scripts/GamePlay/Bullets/BulletObjectPool.cs"
+"Assets/Project/Scripts/GamePlay/Bullets/BulletService.cs"
 "Assets/Project/Scripts/GamePlay/Bullets/BulletsScriptableObject.cs"
 "Assets/Project/Scripts/GamePlay/Bullets/BulletsView.cs"
 "Assets/Project/Scripts/GamePlay/Bullets/IBullets.cs"

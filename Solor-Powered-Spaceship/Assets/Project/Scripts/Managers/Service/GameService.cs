@@ -15,6 +15,7 @@ public class GameService : GenericMonoSingleton<GameService>
     private EnemyService enemyService;
     private OrbService orbService;
     [SerializeField] private UIView uiService;
+    private BulletService bulletService;
 
 
     #endregion
@@ -24,7 +25,7 @@ public class GameService : GenericMonoSingleton<GameService>
     [SerializeField] private BulletsView bulletsPrefab;
     [SerializeField] private EnemyView enemyPrefab;
     [SerializeField] private OrbView orbView;
-   // [SerializeField] private FollowPlayer followPlayer;
+    // [SerializeField] private FollowPlayer followPlayer;
     #endregion
 
     #region scriptable Objects
@@ -42,17 +43,21 @@ public class GameService : GenericMonoSingleton<GameService>
     #region  events
     void OnEnable()
     {
-        GamerEventManager.OnGameStarted += SpawnPlayer;
+        // GamerEventManager.OnGameStarted += SpawnPlayer;
     }
     void OnDisable()
     {
-        GamerEventManager.OnGameStarted -= SpawnPlayer;
+        //  GamerEventManager.OnGameStarted -= SpawnPlayer;
     }
     #endregion
     private void Start()
     {
-      // playerService = new PlayerService(playerPrefab, playerScriptableObject, bulletsView, bulletData);
-
+        // playerService = new PlayerService(playerPrefab, playerScriptableObject, bulletsView, bulletData);
+        playerService = new PlayerService(playerPrefab, playerScriptableObject);
+        bulletService = new BulletService(bulletsPrefab, bulletData);
+        playerTrans = playerService.GetPlayerController().playerView.transform;
+        enemyService = new EnemyService(enemyPrefab, enemyScriptableObjects, playerService.GetPlayerController().playerView.transform);
+        orbService = new OrbService(orbView, orbScriptableObects, playerService.GetPlayerController().playerView.transform);
     }
 
     private void Update()
@@ -66,16 +71,42 @@ public class GameService : GenericMonoSingleton<GameService>
         {
             orbService.update();
         }
-      
+
     }
+    // public void SpawnPlayer()
+    // {
 
-    public void SpawnPlayer()
+    // }
+
+    public void newSpawnPlayer()
     {
+        if (playerService != null)
+        {
+            GameObject.Destroy(playerService.GetPlayerController().playerView.gameObject);
+        }
 
-        playerService = new PlayerService(playerPrefab, playerScriptableObject, bulletsPrefab, bulletData);
+        playerService = new PlayerService(playerPrefab, playerScriptableObject);
         playerTrans = playerService.GetPlayerController().playerView.transform;
         enemyService = new EnemyService(enemyPrefab, enemyScriptableObjects, playerService.GetPlayerController().playerView.transform);
         orbService = new OrbService(orbView, orbScriptableObects, playerService.GetPlayerController().playerView.transform);
+    }
+
+    public void ResetGame()
+    {
+        GetPlayerService().GetPlayerController().ResetPlayer();
+        GetEnemyService().ResetEnemies();
+        GetOrbService().ResetOrb();
+        GetUIService().ResetUIView();
+        newSpawnPlayer();
+
+
+
+        SetGamePause(false);
+    }
+
+    public void SetGamePause(bool isPaused)
+    {
+        Time.timeScale = isPaused ? 0 : 1;
     }
 
     #region Getter
@@ -83,5 +114,6 @@ public class GameService : GenericMonoSingleton<GameService>
     public EnemyService GetEnemyService() => enemyService;
     public OrbService GetOrbService() => orbService;
     public UIView GetUIService() => uiService;
-    #endregion 
+    public BulletService GetBulletService() => bulletService;
+    #endregion
 }

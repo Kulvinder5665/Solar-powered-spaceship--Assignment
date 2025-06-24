@@ -1,37 +1,43 @@
 using Solar.Player;
 using Unity.Android.Types;
 using UnityEngine;
-namespace Solar.Enemy{
+namespace Solar.Enemy
+{
     public class EnemyController
     {
         // Dependencies
         public EnemyView enemyView;
         public Enemydata enemyData;
- 
+
 
         // Variables
         private EnemyType currentEnemyType;
         private int currentHealth;
+
 
         public EnemyController(EnemyView _enemyView, Enemydata _enemyData)
         {
             this.enemyView = Object.Instantiate(_enemyView);
             enemyView.SetController(this);
             this.enemyData = _enemyData;
-           
+            Configure();
         }
 
         public void Configure()
         {
             currentEnemyType = enemyData.enemyType;
-    
+
             currentHealth = enemyData.maxHealth;
             enemyView.gameObject.SetActive(true);
         }
 
         public void TakeDamge(int damageToTake)
         {
+            if (currentEnemyType == EnemyType.Indestructible)
+            {
 
+                return;
+            }
 
             currentHealth -= damageToTake;
             if (currentHealth <= 0)
@@ -39,12 +45,15 @@ namespace Solar.Enemy{
                 EnemyDestroyed();
             }
 
+
         }
+        public void UpdateEnemyMotion() => enemyView.transform.Translate(Vector3.back * Time.deltaTime * enemyData.moveSpeed);
         public void OnEnemyCollided(GameObject collidedGameObject)
         {
 
             if (collidedGameObject.GetComponent<PlayerView>() != null)
             {
+
                 GameService.Instance.GetPlayerService().GetPlayerController().TakeDamage(enemyData.DamgeOnCollide);
                 EnemyDestroyed();
             }
@@ -52,7 +61,8 @@ namespace Solar.Enemy{
 
         public void OutOfPlayerView()
         {
-               if (this.enemyView.transform.position.z < GameService.Instance.playerTrans.position.z)
+
+            if (this.enemyView.transform.position.z < GameService.Instance.playerTrans.position.z)
             {
                 TakeDamge(1);
             }
@@ -61,15 +71,12 @@ namespace Solar.Enemy{
         {
             if (currentEnemyType == EnemyType.Destructible)
             {
-                // effects and sound 
-                //return to pool
-                 enemyView.gameObject.SetActive(false);
-
+                enemyView.gameObject.SetActive(false);
                 GameService.Instance.GetEnemyService().ReturnEnemyToPool(this);
             }
         }
 
-       
+      
 
     }
 }

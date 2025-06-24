@@ -7,7 +7,14 @@ namespace Solar.Enemy{
         private EnemyController enemyController;
 
 
-    
+        private void OnEnable()
+        {
+            GamerEventManager.OnPlayerDie += OnPlayerDie;
+        }
+        private void OnDisable()
+        {
+            GamerEventManager.OnPlayerDie -= OnPlayerDie;
+        }
         public void SetController(EnemyController _enemyController) => this.enemyController = _enemyController;
 
 
@@ -22,8 +29,17 @@ namespace Solar.Enemy{
 
         private void Update()
         {
+
             if (enemyController == null) return;
-              enemyController.OutOfPlayerView();
+            enemyController.OutOfPlayerView();
+            enemyController.UpdateEnemyMotion();
+        }
+
+        public void OnPlayerDie()
+        {
+              gameObject.SetActive(false);
+
+                GameService.Instance.GetEnemyService().ReturnEnemyToPool(enemyController);
         }
         
     }

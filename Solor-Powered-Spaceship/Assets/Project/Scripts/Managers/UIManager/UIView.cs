@@ -7,45 +7,50 @@ namespace Solar.UI
 {
     public class UIView : MonoBehaviour
     {
+        #region  Var
         [Header("UI Slider ")]
         public Slider solarBarSlider;
         public Slider fuelBarSlider;
 
         [Header("UI Panel ")]
-        public GameObject mainMenuPanel;
+        public GameObject restartPanel;
         public GameObject inGamePanel;
         public GameObject gameOverPanel;
 
         [Header("UI Button and Text")]
         public Button playGameBtn;
-        public Button restartGameBtn;
+        public Button openRestartPopUpBtn;
         public Button quitGameBtn;
 
-     
+
         public TextMeshProUGUI scoreText;
         public TextMeshProUGUI highScoreText;
 
         //private Variable 
         private int currentScore;
         private float scoreTimer;
-      
+        #endregion
+
+        #region  Methods
         void Start()
         {
-            
             InitialSetUp();
+            openRestartPopUpBtn.onClick.AddListener(OnPressRestartBtn);
+            quitGameBtn.onClick.AddListener(OnPressQuitBtn);
+            playGameBtn.onClick.AddListener(OnPlayButtonClicked);
         }
 
         private void InitialSetUp()
         {
-            Time.timeScale = 0;
+         
             currentScore = 0;
             scoreTimer = 0;
             scoreText.SetText("0");
 
-            playGameBtn.onClick.AddListener(OnPlayButtonClicked);
 
-            mainMenuPanel.SetActive(true);
-            inGamePanel.SetActive(false);
+
+            restartPanel.SetActive(false);
+            inGamePanel.SetActive(true);
             gameOverPanel.SetActive(false);
         }
 
@@ -57,13 +62,13 @@ namespace Solar.UI
 
                 if (scoreTimer >= 1f)
                 {
-                    currentScore ++;
-                    scoreText.SetText("Score : " +currentScore.ToString());
+                    currentScore++;
+                    scoreText.SetText("Score : " + currentScore.ToString());
                     scoreTimer = 0f;
                 }
             }
         }
-        
+        #region  events and func
         void OnEnable()
         {
             GamerEventManager.OnEnergyChange += UpdateSolarEnergyBar;
@@ -86,39 +91,25 @@ namespace Solar.UI
             fuelBarSlider.value = currentFuel / maxFuel;
             if (fuelBarSlider.value <= 0)
             {
-                // GamerEventManager.GameOver();
+                 GamerEventManager.PlayerHasDie();
                 EnableGameOverUI();
             }
         }
+        #endregion
 
-        public void OnPlayButtonClicked()
-        {
-            Time.timeScale = 1;
 
-            mainMenuPanel.SetActive(false);
-            inGamePanel.SetActive(true);
-            GamerEventManager.GameStarted();
-            
-            
-        }
         public void IncrementScore()
         {
             currentScore = (int)Time.deltaTime;
-            scoreText.SetText("Score : " +currentScore.ToString());
+            scoreText.SetText("Score : " + currentScore.ToString());
         }
 
 
         public void EnableGameOverUI()
         {
-            Time.timeScale = 0;
+            GameService.Instance.SetGamePause(true);
             gameOverPanel.SetActive(true);
             inGamePanel.SetActive(false);
-
-            restartGameBtn.onClick.RemoveAllListeners();
-            quitGameBtn.onClick.RemoveAllListeners();
-
-            restartGameBtn.onClick.AddListener(OnPressRestartBtn);
-            quitGameBtn.onClick.AddListener(OnPressQuitBtn);
 
             HighscoreSaveAndLoad();
         }
@@ -135,8 +126,41 @@ namespace Solar.UI
             highScoreText.SetText("High Score: " + highScore.ToString());
         }
 
-        // Need some  rebuilding
-        void OnPressRestartBtn() => SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+
+        public void OnPlayButtonClicked()
+        {
+
+            GameService.Instance.ResetGame();
+
+            ResetUIView();
+            gameOverPanel.SetActive(false);
+            restartPanel.SetActive(false);
+            inGamePanel.SetActive(true);
+             GameService.Instance.SetGamePause(false);
+
+        }
+        void OnPressRestartBtn() => restartPanel.gameObject.SetActive(true);
         public void OnPressQuitBtn() => Application.Quit();
-     }
+        #endregion
+
+
+        #region ResetUI
+        public void ResetUIView()
+        {
+            
+            currentScore = 0;
+            scoreText.text = $"Score : {currentScore}";
+            solarBarSlider.value = 1f;
+            fuelBarSlider.value = 1f;
+
+            inGamePanel.SetActive(true);
+            gameOverPanel.SetActive(false);
+            restartPanel.SetActive(false);
+
+        }
+        #endregion
+
+       
+
+    }
 }

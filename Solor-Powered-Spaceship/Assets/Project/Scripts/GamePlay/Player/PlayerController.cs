@@ -1,3 +1,4 @@
+
 using System.Threading.Tasks;
 using Solar.Bullet;
 using Unity.VisualScripting;
@@ -10,29 +11,30 @@ namespace Solar.Player
         //Dependenics
         public PlayerView playerView;
         public PlayerConfig playerConfig;
-        private BulletObjectPool bulletPool;
+        //private BulletObjectPool bulletPool;
 
         // Varibales
         private Rigidbody rb;
         private int currentHealth;
+        public PlayerState currentPlayerState;
 
 
 
         public PlayerController(PlayerView _playerView,
-                                 PlayerConfig _playerConfig,
-                                 BulletObjectPool _bulletPool)
+                                 PlayerConfig _playerConfig)
+                                
         {
 
             this.playerView = Object.Instantiate(_playerView);
             playerConfig = _playerConfig;
-            this.bulletPool = _bulletPool;
+          //  this.bulletPool = _bulletPool;
 
             playerView.SetController(this);
 
             playerView.Initialized();
             InitializeVaribale();
             //   playerView.ConnectController();
-            playerView.Activate();
+         //   playerView.Activate();
 
         }
 
@@ -40,7 +42,7 @@ namespace Solar.Player
         {
             this.rb = playerView.GetRigidbody();
             currentHealth = playerConfig.maxHealth;
-
+            currentPlayerState = PlayerState.fire;
         }
 
 
@@ -115,14 +117,18 @@ namespace Solar.Player
             currentHealth -= damageToTake;
             if (currentHealth <= 0)
             {
+                currentPlayerState =   PlayerState.StopFire;
                 PlayerDeath();
             }
         }
 
         private async void PlayerDeath()
         {
-            Object.Destroy(playerView.gameObject);
-            // Stop the enemy spawn and power up spawn
+            GamerEventManager.PlayerHasDie();
+           
+            playerView.gameObject.SetActive(false);
+            GameService.Instance.GetEnemyService().SetEnemySpawning(false);
+            GameService.Instance.GetOrbService().SetOrbSpawning(false);
 
             //Wait for the player ship Destruction
             await Task.Delay(playerConfig.deathDelay * 1000);
@@ -145,7 +151,7 @@ namespace Solar.Player
 
         public void FireBulletAtPos(Transform fireLoc)
         {
-            BulletController bulletToFire = bulletPool.GetBullet();
+            BulletController bulletToFire = GameService.Instance.GetBulletService().GetBullet();
             bulletToFire.ConfigureBullet(fireLoc);
 
         }
@@ -157,26 +163,55 @@ namespace Solar.Player
 
         public void RefillFuel(float AmountToAdd)
         {
-          
+            if (playerConfig.currentFuel < playerConfig.maxFuel)
+            {
                 playerConfig.currentFuel += AmountToAdd;
-                playerConfig.currentFuel = Mathf.Min(playerConfig.currentFuel, playerConfig.maxFuel);
+                if (playerConfig.currentFuel > playerConfig.maxFuel)
+                {
+                    playerConfig.currentFuel = playerConfig.maxFuel;
+                }
+                //playerConfig.currentFuel = Mathf.Clamp(playerConfig.currentFuel, 0, playerConfig.maxFuel);
                 GamerEventManager.ChangeInFuelEnergy(playerConfig.currentFuel, playerConfig.maxFuel);
-                Debug.Log("Increase The Fuel");
-            
+               // Debug.Log("Increase The Fuel");
+            }
+
         }
 
         public void RefillSolarOrb(float AmountToAdd)
         {
-            if (playerConfig.currentEnergy <= playerConfig.maxFuel)
+            if (playerConfig.currentEnergy <= playerConfig.maxEnergy)
             {
                 playerConfig.currentEnergy += AmountToAdd;
                 playerConfig.currentEnergy = Mathf.Min(playerConfig.currentEnergy, playerConfig.maxEnergy);
                 GamerEventManager.ChangeInSolarEnergy(playerConfig.currentEnergy, playerConfig.maxEnergy);
-                  Debug.Log("Increase The Solar");
+
             }
         }
 
 
         #endregion
+
+
+        #region  ResetPlayer
+        public void ResetPlayer()
+        {
+            playerView.transform.position = new Vector3(0, 0, 0);
+            rb.linearVelocity = Vector3.zero;
+
+
+            currentHealth = playerConfig.maxHealth;
+            currentPlayerState = PlayerState.fire;
+            playerConfig.currentEnergy = playerConfig.maxEnergy;
+            playerConfig.currentEnergy = playerConfig.maxFuel;
+
+            playerView.gameObject.SetActive(true);
+            
+        }
+        #endregion
+        public enum PlayerState
+        {
+            fire,
+            StopFire
+        }
     }
 }

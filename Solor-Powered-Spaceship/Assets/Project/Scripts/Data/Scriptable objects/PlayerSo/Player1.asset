@@ -16,13 +16,13 @@ MonoBehaviour:
   maxHealth: 1
   deathDelay: 2
   maxFuel: 100
-  currentFuel: 0
-  FuelDrainRate: 2
-  forwardspeed: 5
+  currentFuel: 81.95401
+  FuelDrainRate: 6
+  forwardspeed: 10
   smoothTime: 2
   TouchSensitivity: 2
   maxEnergy: 20
-  currentEnergy: 9.479916
+  currentEnergy: 20
   thrustForce: 2
   energyDrainRate: 2
   fallSpeed: 30

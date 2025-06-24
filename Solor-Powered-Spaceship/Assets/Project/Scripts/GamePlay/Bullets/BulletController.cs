@@ -13,7 +13,12 @@ namespace Solar.Bullet
             bulletsView.SetController(this);
             this.bulletsScriptableObject = _bulletsScriptableObject;
             InitizleVar();
-       
+
+        }
+        public void Deactivate()
+        {
+            if (bulletsView != null)
+                bulletsView.gameObject.SetActive(false);
         }
 
         void InitizleVar()
@@ -24,9 +29,11 @@ namespace Solar.Bullet
         public void ConfigureBullet(Transform spawnTrans)
         {
             InitizleVar();
+
             bulletsView.gameObject.SetActive(true);
             bulletsView.transform.position = spawnTrans.position;
-            // bulletsView.transform.rotation = spawnTrans.rotation;
+
+
         }
         public void UpdateBulletMotion() => bulletsView.transform.Translate(Vector3.up * Time.deltaTime * bulletsScriptableObject.speed);
 
@@ -37,7 +44,7 @@ namespace Solar.Bullet
                 collidedObject.GetComponent<IDamageable>().TakeDamage(bulletsScriptableObject.damge);
                 //GameService.Instance
                 bulletsView.gameObject.SetActive(false);
-                GameService.Instance.GetPlayerService().ReturnBulletToPool(this);
+                GameService.Instance.GetBulletService().ReturnBulletToPool(this);
 
             }
         }
@@ -47,9 +54,11 @@ namespace Solar.Bullet
             currentTime -= Time.deltaTime;
             if (currentTime <= 0)
             {
-                GameService.Instance.GetPlayerService().ReturnBulletToPool(this);
+                GameService.Instance.GetBulletService().ReturnBulletToPool(this);
             }
         }
+
+        public BulletsView GetView() => bulletsView;
     }
 
 

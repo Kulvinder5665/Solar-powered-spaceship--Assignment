@@ -7,7 +7,14 @@ namespace Solar.Orb
     {
         private OrbController orbController;
         public void SetController(OrbController _orbController) => orbController = _orbController;
-
+        void OnEnable()
+        {
+            GamerEventManager.OnPlayerDie += OnPlayerDie;
+        }
+        void OnDisable()
+        {
+            GamerEventManager.OnPlayerDie -= OnPlayerDie;
+        }
         public void Update()
         {
             if (orbController == null) return;
@@ -17,9 +24,17 @@ namespace Solar.Orb
         {
             if (other.gameObject.CompareTag("Player"))
             {
+                if (!gameObject.activeInHierarchy) return;
                 orbController.OnTriggerWithPayer();
-                Debug.Log("Collider iwth player");
+            
             }
+        }
+
+        void OnPlayerDie()
+        {
+            gameObject.SetActive(false);
+            GameService.Instance.GetOrbService().ReturnToPool(orbController);
+
         }
     }
 }

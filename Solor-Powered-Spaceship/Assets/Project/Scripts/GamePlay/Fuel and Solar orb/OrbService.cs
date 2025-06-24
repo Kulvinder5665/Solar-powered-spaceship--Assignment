@@ -74,7 +74,7 @@ namespace Solar.Orb{
 
             spawnposZAhead = Random.Range(80, 200);
             Vector3 spawnPos = new Vector3(playerTrans.position.x + Random.Range(spawnRangePosX, spawnRangePosX),
-                                           playerTrans.position.y + Random.Range(0,spawnRangePosY),
+                                           playerTrans.position.y + Random.Range(0, spawnRangePosY),
                                            playerTrans.position.z + spawnposZAhead);
 
             orbController.orbPrefab.transform.position = spawnPos;
@@ -90,7 +90,8 @@ namespace Solar.Orb{
         }
         #endregion
 
-        public void SetEnemySpawning(bool setActive) => isSpawning = setActive;
+        #region pool
+        public void SetOrbSpawning(bool setActive) => isSpawning = setActive;
         public void ReturnToPool(OrbController orb)
         {
             var orbType = orb.orbData.orbType;
@@ -103,7 +104,22 @@ namespace Solar.Orb{
                 Debug.LogError($"No orb pool is found orb type : {orbType} ");
             }
         }
+        #endregion
 
+        #region Reset
+        public void ResetOrb()
+        {
 
-    }
+            foreach (var pool in orbPools.Values)
+            {
+                foreach (var orb in pool.pooledItems)
+                {
+                    orb.Item.orbPrefab.gameObject.SetActive(false);
+                }
+            }
+             SetOrbSpawning(true);
+        }
+        #endregion
+
+        }
 }

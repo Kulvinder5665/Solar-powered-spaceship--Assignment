@@ -15,7 +15,7 @@ public class GamerEventManager
     }
 
     public static event Action OnPlayerDie;
-    public static void GameOver()
+    public static void PlayerHasDie()
     {
         OnPlayerDie?.Invoke();
     }

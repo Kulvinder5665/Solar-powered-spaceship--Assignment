@@ -11,8 +11,8 @@ namespace Solar.Enemy
         #region Dependencies
 
         private Dictionary<EnemyType, EnemyPool> enemyPools;
-         private EnemyScriptableObject[] enemyScriptableObject;
-       
+        private EnemyScriptableObject[] enemyScriptableObject;
+
         #endregion
 
         #region Variables
@@ -41,9 +41,9 @@ namespace Solar.Enemy
                 {
                     enemyPools.Add(enemyType, new EnemyPool(enemyPrefab, so.enemydata));
                 }
-                  currentSpawnRate = so.initialSpawnRate;
+                currentSpawnRate = so.initialSpawnRate;
             }
-     //       enemyPool = new EnemyPool(enemyPrefab, enemyScriptableObject.enemydata);
+            //       enemyPool = new EnemyPool(enemyPrefab, enemyScriptableObject.enemydata);
 
             InitializeVariables();
         }
@@ -51,9 +51,9 @@ namespace Solar.Enemy
         private void InitializeVariables()
         {
             isSpawning = true;
-          
+
             spawnTimer = currentSpawnRate;
-         
+
         }
         #endregion
         public void Update()
@@ -74,22 +74,22 @@ namespace Solar.Enemy
 
         private void SpawnEnemy()
         {
-            var randomSo =enemyScriptableObject[ Random.Range(0, enemyScriptableObject.Length)];
+            var randomSo = enemyScriptableObject[Random.Range(0, enemyScriptableObject.Length)];
             var enemyType = randomSo.enemydata.enemyType;
 
             EnemyPool selectPool = enemyPools[enemyType];
             EnemyController enemyController = selectPool.GetEnemy();
             enemyController.enemyView.gameObject.SetActive(true);
             // EnemyController spawnedEnemy = enemyPool.GetEnemy();
-            
+
             spawnDistanceAhed = Random.Range(80, 200);
             Vector3 spawnPos = new Vector3(playerTransform.position.x + Random.Range(-spawnRangeX, spawnRangeX),
                                            playerTransform.position.y + Random.Range(-spawnRangeY, spawnRangeY),
                                            playerTransform.position.z + spawnDistanceAhed);
 
             enemyController.enemyView.transform.position = spawnPos;
-            
-         
+
+
 
             if (enemyController.enemyData.enemyType == EnemyType.Destructible)
             {
@@ -106,9 +106,11 @@ namespace Solar.Enemy
         private void IncreaseDifficulty()
         {
             //nothing for now
-            
+
         }
         #endregion
+
+        #region pool 
         private void ResetSpawnTimer() => spawnTimer = currentSpawnRate;
         public void SetEnemySpawning(bool setActive) => isSpawning = setActive;
         public void ReturnEnemyToPool(EnemyController enemyToReturn)
@@ -123,9 +125,23 @@ namespace Solar.Enemy
             {
                 Debug.LogError($"No pool found Per enemy {enemyType}");
             }
-            
-        } 
-    
-     
+
+        }
+        #endregion
+        #region Reset
+        public void ResetEnemies()
+        {
+
+            foreach (var pool in enemyPools.Values)
+            {
+                foreach (var enemy in pool.pooledItems)
+                {
+                    enemy.Item.enemyView.gameObject.SetActive(false);
+                }
+            }
+             SetEnemySpawning(true);
+        }
+        #endregion
+
     }
 }
