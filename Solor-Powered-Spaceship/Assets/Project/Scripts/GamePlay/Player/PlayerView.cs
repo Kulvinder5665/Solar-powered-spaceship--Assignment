@@ -21,9 +21,7 @@ namespace Solar.Player
         private Rigidbody rb;
 
         public Transform cannonTransformPoint;
-        private bool isTouching;
-        private Vector2 currentDelta;
-        private Vector2 currentPos;
+       
 
         public void Activate()=>  enabled = true;
 
@@ -121,7 +119,10 @@ namespace Solar.Player
             return rb;
         }
 
-
+        // public void OnTriggerWithPayer(GameObject collision)
+        // {
+           
+        // }
     }
 }
 

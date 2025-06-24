@@ -6,10 +6,10 @@ namespace Solar.Enemy
     [CreateAssetMenu(fileName = "EnemyScriptableOnject", menuName = "EnemyScriptableObject/Enemydata")]
     public class EnemyScriptableObject : ScriptableObject
     {
-        public float initialSpawnRate;
-        public float spawnDistance;
-        public float miniSpawnRate;
-        public float difficultyRate;
+         public float initialSpawnRate;
+        // public float spawnDistance;
+        // public float miniSpawnRate;
+        // public float difficultyRate;
         public Enemydata enemydata;
     }
 
@@ -18,7 +18,6 @@ namespace Solar.Enemy
     {
         public int maxHealth;
         public int DamgeOnCollide;
-        public Material enemyMaterial;
         public EnemyType enemyType;
     }
 

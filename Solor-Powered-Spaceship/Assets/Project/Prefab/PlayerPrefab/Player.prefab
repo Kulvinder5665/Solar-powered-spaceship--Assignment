@@ -200,6 +200,15 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  touchPositionAction:
+    m_Name: Touch Position
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1ea21115-04f6-4261-8193-75ddccfdadbf
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   cannonTransformPoint: {fileID: 8166105772555899872}
 --- !u!114 &2679950917390025821
 MonoBehaviour:

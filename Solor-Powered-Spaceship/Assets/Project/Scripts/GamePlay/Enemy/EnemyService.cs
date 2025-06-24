@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
+
 using UnityEngine;
 
 namespace Solar.Enemy
@@ -7,11 +7,12 @@ namespace Solar.Enemy
 
     public class EnemyService
     {
-      
+
         #region Dependencies
-  
-         private EnemyScriptableObject enemyScriptableObject;
-        private EnemyPool enemyPool;
+
+        private Dictionary<EnemyType, EnemyPool> enemyPools;
+         private EnemyScriptableObject[] enemyScriptableObject;
+       
         #endregion
 
         #region Variables
@@ -26,18 +27,31 @@ namespace Solar.Enemy
         #endregion
 
         #region Initialization
-        public EnemyService(EnemyView enemyPrefab, EnemyScriptableObject enemyScriptableObject, Transform playerPos)
+        public EnemyService(EnemyView enemyPrefab, EnemyScriptableObject[] enemyScriptableObject, Transform playerPos)
         {
             this.enemyScriptableObject = enemyScriptableObject;
-            enemyPool = new EnemyPool(enemyPrefab, enemyScriptableObject.enemydata);
             playerTransform = playerPos;
+
+            enemyPools = new Dictionary<EnemyType, EnemyPool>();
+
+            foreach (var so in enemyScriptableObject)
+            {
+                var enemyType = so.enemydata.enemyType;
+                if (!enemyPools.ContainsKey(enemyType))
+                {
+                    enemyPools.Add(enemyType, new EnemyPool(enemyPrefab, so.enemydata));
+                }
+                  currentSpawnRate = so.initialSpawnRate;
+            }
+     //       enemyPool = new EnemyPool(enemyPrefab, enemyScriptableObject.enemydata);
+
             InitializeVariables();
         }
 
         private void InitializeVariables()
         {
             isSpawning = true;
-            currentSpawnRate = enemyScriptableObject.initialSpawnRate;
+          
             spawnTimer = currentSpawnRate;
          
         }
@@ -50,7 +64,7 @@ namespace Solar.Enemy
             if (spawnTimer <= 0)
             {
                 SpawnEnemy();
-               //IncreaseDifficulty();
+                IncreaseDifficulty();
                 ResetSpawnTimer();
             }
 
@@ -60,32 +74,57 @@ namespace Solar.Enemy
 
         private void SpawnEnemy()
         {
-            EnemyController spawnedEnemy = enemyPool.GetEnemy();
-            spawnedEnemy.enemyView.gameObject.SetActive(true);
+            var randomSo =enemyScriptableObject[ Random.Range(0, enemyScriptableObject.Length)];
+            var enemyType = randomSo.enemydata.enemyType;
+
+            EnemyPool selectPool = enemyPools[enemyType];
+            EnemyController enemyController = selectPool.GetEnemy();
+            enemyController.enemyView.gameObject.SetActive(true);
+            // EnemyController spawnedEnemy = enemyPool.GetEnemy();
+            
             spawnDistanceAhed = Random.Range(80, 200);
             Vector3 spawnPos = new Vector3(playerTransform.position.x + Random.Range(-spawnRangeX, spawnRangeX),
-                                           playerTransform.position.y + Random.Range(-spawnRangeY, spawnRangeY)
-                                            , playerTransform.position.z + spawnDistanceAhed);
+                                           playerTransform.position.y + Random.Range(-spawnRangeY, spawnRangeY),
+                                           playerTransform.position.z + spawnDistanceAhed);
 
-            spawnedEnemy.enemyView.transform.position = spawnPos;
+            enemyController.enemyView.transform.position = spawnPos;
             
          
 
-            if (spawnedEnemy.enemyData.enemyType == EnemyType.Destructible)
+            if (enemyController.enemyData.enemyType == EnemyType.Destructible)
             {
-                spawnedEnemy.enemyView.GetComponent<Renderer>().material.color = Color.red;
+                enemyController.enemyView.GetComponent<Renderer>().material.color = Color.red;
 
             }
             else
             {
-                spawnedEnemy.enemyView.GetComponent<Renderer>().material.color = Color.Lerp(Color.red, Color.black, 0.5f);
+                enemyController.enemyView.GetComponent<Renderer>().material.color = Color.Lerp(Color.red, Color.black, 0.5f);
 
             }
+        }
+
+        private void IncreaseDifficulty()
+        {
+            //nothing for now
+            
         }
         #endregion
         private void ResetSpawnTimer() => spawnTimer = currentSpawnRate;
         public void SetEnemySpawning(bool setActive) => isSpawning = setActive;
-        public void ReturnEnemyToPool(EnemyController enemyToReturn) => enemyPool.ReturnItem(enemyToReturn);
+        public void ReturnEnemyToPool(EnemyController enemyToReturn)
+        {
+            //enemyPool.ReturnItem(enemyToReturn);
+            var enemyType = enemyToReturn.enemyData.enemyType;
+            if (enemyPools.ContainsKey(enemyType))
+            {
+                enemyPools[enemyType].ReturnItem(enemyToReturn);
+            }
+            else
+            {
+                Debug.LogError($"No pool found Per enemy {enemyType}");
+            }
+            
+        } 
     
      
     }

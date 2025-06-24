@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4884487967145748494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7116082318048655252}
+  - component: {fileID: 7892147995084237679}
+  m_Layer: 0
+  m_Name: GameServer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7116082318048655252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4884487967145748494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.9863484, y: 0.43572044, z: 0.14971256}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7892147995084237679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4884487967145748494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086e8c9a3a5fc49f6b6c24014965a756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiService: {fileID: 0}
+  playerPrefab: {fileID: 6616269211178528547, guid: c533f917607384d69ab2154d6da223ab, type: 3}
+  bulletsPrefab: {fileID: 5838240944318648405, guid: 184f9a81b70ad481f8287aac388c7861, type: 3}
+  enemyPrefab: {fileID: 7578418901049965598, guid: 8645352bec3bd47abb1507fcfeaf5f69, type: 3}
+  orbView: {fileID: 1302895870942273252, guid: e498d6a94d194479b969ecd550456d37, type: 3}
+  playerScriptableObject: {fileID: 11400000, guid: 8e4ab387648b3487b8c8e0804bdfe28b, type: 2}
+  bulletData: {fileID: 11400000, guid: 5496728f89e4845d7a0f7d0f8e550ca0, type: 2}
+  enemyScriptableObjects:
+  - {fileID: 11400000, guid: 1d301e9526ee84c189b1c64b4c380931, type: 2}
+  - {fileID: 11400000, guid: 7f12fe0a3241249f49bc87ba30b81231, type: 2}
+  orbScriptableObects:
+  - {fileID: 11400000, guid: bedc1f48dfbe74b45a3726961c83b9ad, type: 2}
+  - {fileID: 11400000, guid: 7d3b2570c49cf4dcc8280544c52f9f8e, type: 2}
+  playerTrans: {fileID: 0}

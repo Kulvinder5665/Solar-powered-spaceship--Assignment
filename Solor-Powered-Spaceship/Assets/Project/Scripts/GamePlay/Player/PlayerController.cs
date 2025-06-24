@@ -7,9 +7,9 @@ namespace Solar.Player
 {
     public class PlayerController
     {
-        // Dependenics
+        //Dependenics
         public PlayerView playerView;
-        public  PlayerConfig playerConfig;
+        public PlayerConfig playerConfig;
         private BulletObjectPool bulletPool;
 
         // Varibales
@@ -19,27 +19,28 @@ namespace Solar.Player
 
 
         public PlayerController(PlayerView _playerView,
-                                 PlayerConfig _playerConfig, BulletObjectPool _bulletPool)
+                                 PlayerConfig _playerConfig,
+                                 BulletObjectPool _bulletPool)
         {
-        
-                this.playerView = Object.Instantiate(_playerView);
-                playerConfig = _playerConfig;
-                this.bulletPool = _bulletPool;
 
-                playerView.SetController(this);
+            this.playerView = Object.Instantiate(_playerView);
+            playerConfig = _playerConfig;
+            this.bulletPool = _bulletPool;
 
-                playerView.Initialized();
-                InitializeVaribale();
+            playerView.SetController(this);
+
+            playerView.Initialized();
+            InitializeVaribale();
             //   playerView.ConnectController();
-                playerView.Activate();
-            
+            playerView.Activate();
+
         }
 
         private void InitializeVaribale()
         {
-              this.rb = playerView.GetRigidbody();
-           currentHealth = playerConfig.maxHealth;
-        
+            this.rb = playerView.GetRigidbody();
+            currentHealth = playerConfig.maxHealth;
+
         }
 
 
@@ -79,16 +80,16 @@ namespace Solar.Player
 
                 Vector3 pos = rb.position;
 
-                
+
                 if (pos.y > 0)
                 {
-             
+
                     pos.y = Mathf.Max(0f, pos.y - playerConfig.fallSpeed * Time.fixedDeltaTime);
                     rb.MovePosition(pos);
                 }
                 else if (pos.y < 0f)
                 {
-                 ;
+                    ;
                     pos.y = 0f;
                     rb.MovePosition(pos);
 
@@ -102,15 +103,18 @@ namespace Solar.Player
             if (playerConfig.currentEnergy > 0)
             {
                 playerConfig.currentFuel -= playerConfig.FuelDrainRate * Time.deltaTime;
-                GamerEventManager.ChangeInFuelEnergy(playerConfig.currentFuel, playerConfig.maxEnergy);
+                playerConfig.currentFuel = Mathf.Max(0, playerConfig.currentFuel);
+                GamerEventManager.ChangeInFuelEnergy(playerConfig.currentFuel, playerConfig.maxFuel);
             }
         }
         public Vector3 GetPlayerPos() => playerView != null ? playerView.transform.position : default;
 
         //Player Health Logic 
-        public void TakeDamage(int damageToTake){
+        public void TakeDamage(int damageToTake)
+        {
             currentHealth -= damageToTake;
-            if(currentHealth<=0){
+            if (currentHealth <= 0)
+            {
                 PlayerDeath();
             }
         }
@@ -125,13 +129,10 @@ namespace Solar.Player
             GameService.Instance.GetUIService().EnableGameOverUI();
 
         }
-        // private void OnDestroy()
-        // {
-        //     playerView.DisconnectController();
-        // }
+
         #endregion
 
-//Fire Logic
+        #region  Fire Logic
         public void HandleShooting()
         {
             FireWeapon();
@@ -142,12 +143,40 @@ namespace Solar.Player
             FireBulletAtPos(playerView.cannonTransformPoint);
         }
 
-       public void FireBulletAtPos(Transform fireLoc)
+        public void FireBulletAtPos(Transform fireLoc)
         {
             BulletController bulletToFire = bulletPool.GetBullet();
             bulletToFire.ConfigureBullet(fireLoc);
+
+        }
+        #endregion
+
+
+        #region  Refill orb and fuel
+
+
+        public void RefillFuel(float AmountToAdd)
+        {
+          
+                playerConfig.currentFuel += AmountToAdd;
+                playerConfig.currentFuel = Mathf.Min(playerConfig.currentFuel, playerConfig.maxFuel);
+                GamerEventManager.ChangeInFuelEnergy(playerConfig.currentFuel, playerConfig.maxFuel);
+                Debug.Log("Increase The Fuel");
             
         }
-    }
 
+        public void RefillSolarOrb(float AmountToAdd)
+        {
+            if (playerConfig.currentEnergy <= playerConfig.maxFuel)
+            {
+                playerConfig.currentEnergy += AmountToAdd;
+                playerConfig.currentEnergy = Mathf.Min(playerConfig.currentEnergy, playerConfig.maxEnergy);
+                GamerEventManager.ChangeInSolarEnergy(playerConfig.currentEnergy, playerConfig.maxEnergy);
+                  Debug.Log("Increase The Solar");
+            }
+        }
+
+
+        #endregion
+    }
 }
